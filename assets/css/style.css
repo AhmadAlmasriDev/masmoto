@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* font used is Rajdhani */
+
+/* Colors 
+
+silver      #ABABAB
+light-blue  #00bbff
+blue        #0074f8
+light-gray  #313131
+dark-gray   #191919
+
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +32,116 @@
     background-repeat: repeat;
 } */
 
-.logo-container svg {
-    width: 200px;
+body {
+    position: relative;
+    font-family: Inter, sans-serif;
+    background-color: #313131;
+    color: #191919;
 }
+#logo{}
+/* 
+a {
+    text-decoration: none;
+    color: #39312d;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Fraunces, sans-serif;
+}
+
+main h1,
+main h2,
+main h3 {
+    font-weight: 600;
+}
+
+main h1 {
+    font-size: 55px;
+    margin-bottom: 18px;
+}
+
+main h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+    letter-spacing: -1.5px;
+}
+
+main h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: auto;
+    border-top: #e0e0e0 solid 1px;
+    width: 100%;
+}
+
+.button {
+
+    font-size: 120%;
+    font-weight: 500;
+    background-color: #c44536;
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: #a63a2e;
+    color: #ffffff;
+}
+
+.main-container {
+    background-color: #ffffff;
+    padding: 64px 0;
+}
+
+.sec-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 64px;
+}
+
+
+.base-image-container {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.base-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.base-image-container img:hover {
+    transform: scale(1.1);
+}
+
+.base-image-caption {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+h3.base-image-caption a:hover {
+    color: #a63a2e;
+} */
