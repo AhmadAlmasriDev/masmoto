@@ -1,4 +1,13 @@
-.polka-dot {
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* .polka-dot {
     width: 240px;
     height: 240px;
     background-color: #000;
@@ -7,4 +16,8 @@
     background-size: 10px 10px;
     background-position: 0 0, 30px 30px;
     background-repeat: repeat;
+} */
+
+.logo-container svg {
+    width: 200px;
 }
