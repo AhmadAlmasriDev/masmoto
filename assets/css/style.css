@@ -5,9 +5,11 @@
 
 White smoke: #f5f5f5
 Silver: #b1b1b1
-Fire engine red: #cc2418
+red: #ed1d24
 Jet: #313131
 Eerie black: #191919
+
+
 
 */
 
@@ -40,6 +42,16 @@ body {
     color: #ffffff;
 }
 
+.st0 {
+    fill: #ed1d24;
+}
+
+.st1 {
+    fill: #000000;
+}
+
+
+
 #logo {
     width: 150px;
 }
@@ -52,6 +64,11 @@ body {
     padding: 0 64px;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 /* ------------------------------------------ */
 .split {
@@ -62,13 +79,25 @@ body {
 
 .left-split {
 
-    background-color: #cc2418;
+    background-color: #ffffff;
 
 }
 
 .right-split {
-    background-color: #ffffff;
+    background-color: #ed1d24;
 
+}
+
+.header-split {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-split {
+    top: 200;
+    left: 0;
+    right: 0;
 }
 
 .split-background-container {
@@ -79,14 +108,15 @@ body {
     z-index: 2;
     padding: 0;
     /* width: 100%; */
-    height: 200px;
+    height: 170px;
 }
 
 #header {
     position: absolute;
     z-index: 1;
     top: 0;
-    width: 100%;
+    width: 100vw;
+
 
 }
 
@@ -94,8 +124,153 @@ body {
     position: absolute;
     z-index: 3;
     top: 0;
+    width: 100%;
+    /* max-width: 1400px; */
+}
+
+.header-container>div {
+    padding: 32px 32px;
 
 }
+
+.logo-container {
+    width: 50%;
+}
+
+.test {
+    width: 50%;
+    font-size: 250%;
+    color: #000000;
+
+}
+
+.nav-menu {
+
+    font-size: 200%;
+    font-weight: 700;
+    padding: 0;
+
+}
+
+.right-nav-container {
+    width: 100%;
+}
+
+#right-nav-menu {
+
+
+    justify-content: left;
+}
+
+.left-nav-container {
+    width: 50%;
+}
+
+
+
+#left-nav-menu {
+    align-content: space-between;
+    justify-content: right;
+}
+
+.nav-menu li {
+    padding: 0 32px;
+
+    list-style-type: none;
+}
+
+
+
+
+.nav-menu a {
+    padding: 12px 24px;
+    /* border: solid 1px #31313100; */
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+#left-nav-menu a {
+    color: #000000;
+}
+
+.nav-menu a:hover {
+    /* background-color: #ed1d24; */
+    /* padding: 12px 24px; */
+    border-radius: 5px;
+    /* border: solid 1px #313131; */
+    /* color: #ffffff; */
+    box-shadow: inset 2px 2px 6px #0000008f
+}
+
+#right-nav-menu a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#left-nav-menu a:hover {
+    background-color: #ed1d24;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* ---------------altirnative  hover ------------------------------------------------ */
+/* .nav-menu a {
+    padding: 12px 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+    padding-bottom: 5px;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 25%;
+
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+#left-nav-menu a::after {
+    background-color: #ed1d24;
+}
+
+#right-nav-menu a::after {
+    background-color: #ffffff;
+}
+
+#left-nav-menu a {
+    color: #000000;
+}
+
+#right-nav-menu a {
+    color: #ffffff;
+}
+ */
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
 
 
 #main-sec {
@@ -110,20 +285,100 @@ body {
 .back-logo-container {
     position: absolute;
     z-index: 1;
-
+    height: 100vh;
     width: 100%;
+    padding: 2vh 0 0 0;
+    flex-direction: column;
+    justify-content: start;
+
 }
 
 .back-logo-container>div {
-    padding: 64px;
-    width: 80%;
+    max-width: 1400px;
+    /* padding: 5vh; */
+    width: 70%;
     opacity: .5;
+}
+
+.back-logo {
+    width: 100%;
 }
 
 
 footer {
     visibility: hidden;
 }
+
+
+
+/* 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+/* 
+#nav-menu {
+    font-family: Inter, sans-serif;
+    font-size: 120%;
+    font-weight: 500;
+    padding: 0;
+}
+
+#nav-menu li {
+    list-style-type: none;
+}
+
+#nav-menu a {
+    padding: 24px;
+}
+
+#nav-menu a:hover {
+    background-color: #c44536;
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: #ffffff;
+}
+ */
+
+
+
+
+
+
+
+
+
 
 
 

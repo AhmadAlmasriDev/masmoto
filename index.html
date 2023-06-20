@@ -14,45 +14,53 @@
 <body class="dots">
     <div class="back-logo-container flex-container">
         <div>
-            <svg id="back-logo" viewBox="0 0 380 255">
+            <img class="back-logo" src="assets/images/logo.svg" alt="masmoto background logo">
+            <!-- <svg id="back-logo" viewBox="0 0 380 255">
                 <use href="#svg-logo"></use>
-            </svg>
+            </svg> -->
         </div>
     </div>
 
     <!-- _________________________Header Section____________________________ -->
 
-    <section id="header">
+    <div id="header">
         <div class="header-container">
-            <div class="logo-container">
-                <a href="#">
-                    <svg id="logo" viewBox="0 0 380 255">
-                        <use href="#svg-logo"></use>
-                    </svg>
-                </a>
-            </div>
+            <div class=" flex-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <svg id="logo" viewBox="0 0 380 255">
+                            <use href="#svg-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="left-nav-container">
+                    <ul id="left-nav-menu" class="flex-container nav-menu">
+                        <li class=""><a href="#">specs</a></li>
+                        <li class=""><a href="#">quiz</a></li>
+                    </ul>
+                </nav>
 
-            <nav class="nav-container">
-                <ul>
-                    <li class="nav-item"><a href="#">specs</a></li>
-                    <li class="nav-item"><a href="#">paint shop</a></li>
-                    <li class="nav-item"><a href="#">quiz</a></li>
-                    <li class="nav-item"><a href="#">useful links</a></li>
-                </ul>
-            </nav>
+
+                <nav class="right-nav-container">
+                    <ul id="right-nav-menu" class="flex-container nav-menu">
+                        <li class=""><a href="#">paint shop</a></li>
+                        <li class=""><a href="#">useful links</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <!-- _________________________Split Background__________________________ -->
 
-        <div class="split-background-container flex-container">
-            <div class="right-split split"></div>
+        <div class="split-background-container flex-container header-split">
             <div class="left-split split"></div>
+            <div class="right-split split"></div>
         </div>
-    </section>
+    </div>
 
     <!-- _________________________Main Section______________________________ -->
 
 
-    <section id="main-sec">
+    <div id="main-sec">
         <div class="utilities-container">
             <div>
                 <div class="utilities-header">
@@ -107,8 +115,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
+    <div class="split-background-container flex-container main-split">
+        <div class="left-split split"></div>
+        <div class="right-split split"></div>
+    </div>
 
     <!-- _________________________Footer Section____________________________ -->
 
@@ -137,11 +149,11 @@
 
 <!-- _____________________________SVG Files_________________________________ -->
 
-<!-- Logo_________________________________ -->
+<!-- Logo Header__________________________ -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol version="1.1" id="svg-logo" x="0px" y="0px" width="380px" height="255px" viewBox="0 0 380 255"
         style="enable-background:new 0 0 380 255;" xml:space="preserve">
-        <style type="text/css">
+        <!-- <style type="text/css">
             .st0 {
                 fill: #AD0000;
             }
@@ -149,7 +161,7 @@
             .st1 {
                 fill: #000000;
             }
-        </style>
+        </style> -->
         <g>
             <g>
                 <path class="st0" d="M7.129,54.368L41.935,71.57l-13.602,1c0,0-6.201,25.803,9.001,59.208H14.53
