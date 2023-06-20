@@ -27,7 +27,7 @@ Eerie black: #191919
     /* width: 240px;
     height: 240px; */
     background-color: #b1b1b1;
-    background-image: radial-gradient(#31313132 2px, transparent 0);
+    background-image: radial-gradient(#313131 2px, transparent 0);
 
     background-size: 40px 40px;
     background-position: 0 0, 30px 30px;
@@ -88,28 +88,31 @@ a {
 
 }
 
-.header-split {
+
+
+
+
+.split-background-container {
+    /* position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2; */
+    padding: 0;
+    /* width: 100%; */
+    height: 900px;
 }
 
-.main-split {
-    top: 200;
-    left: 0;
-    right: 0;
-}
-
-.split-background-container {
+/* .main-split {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
-    padding: 0;
-    /* width: 100%; */
-    height: 170px;
-}
+
+    margin-top: 170px;
+    height: 800px;
+} */
 
 #header {
     position: absolute;
@@ -275,6 +278,7 @@ a {
 
 #main-sec {
     margin-top: 200px;
+    color: #000000;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -306,7 +310,8 @@ a {
 
 
 footer {
-    visibility: hidden;
+
+    /* visibility: hidden; */
 }
 
 
