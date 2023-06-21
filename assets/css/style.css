@@ -9,11 +9,9 @@ red: #ed1d24
 Jet: #313131
 Eerie black: #191919
 
-
-
 */
 
-
+/* ---------------------------Defaults--------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +48,9 @@ body {
     fill: #000000;
 }
 
-
+li {
+    list-style-type: none;
+}
 
 #logo {
     width: 150px;
@@ -69,8 +69,9 @@ a {
     color: #ffffff;
 }
 
+/* ---------------------------Home Page-------------------------------------- */
 
-/* ------------------------------------------ */
+/* Split---------------------------- */
 .split {
     height: 100%;
     width: 100%;
@@ -87,10 +88,6 @@ a {
     background-color: #ed1d24;
 
 }
-
-
-
-
 
 .split-background-container {
     position: absolute;
@@ -113,6 +110,8 @@ a {
     margin-top: 170px;
     height: 70vh;
 }
+
+/* ---------------------------Home Page-------------------------------------- */
 
 #header {
     /* position: absolute; */
@@ -176,7 +175,7 @@ a {
 .nav-menu li {
     padding: 0 32px;
 
-    list-style-type: none;
+
 }
 
 
@@ -305,6 +304,8 @@ a {
     width: 100%;
 }
 
+/* _______________________________________________________ */
+
 
 footer {
 
@@ -318,10 +319,12 @@ footer {
     /* margin-top: 900px; */
     background-color: #f5f5f5;
     /* visibility: hidden; */
+    box-shadow: 0px -2px 6px #00000019;
+    border-top: solid #ffffff 2px;
+
 }
 
 
-/* _______________________________________________________ */
 
 
 .footer-container {
@@ -329,7 +332,7 @@ footer {
 }
 
 .footer-container ul {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 
@@ -337,15 +340,13 @@ footer {
 
 img {
 
-    width: 200px;
+    width: 90%;
+
     /* margin: 12px 24px; */
 }
 
 .footer-link {
-
-   
     padding: 12px 24px;
-
 }
 
 
