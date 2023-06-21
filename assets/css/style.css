@@ -294,13 +294,37 @@ a {
 
 
 #main-sec {
-    margin-top: 200px;
+    /* visibility: hidden; */
+    margin-top: 170px;
     color: #000000;
     position: absolute;
     top: 0;
-    z-index: 5;
+    right: 0;
+    left: 0;
+    z-index: 3;
     /* margin-bottom: 100px; */
+}
 
+.utilities-container {
+    background-color: blue;
+    width: 70%;
+    max-width: 1400px;
+}
+
+.utility-card {
+    background-color: magenta;
+    width: 200px;
+    height: 300px;
+}
+
+.cards-container {
+    padding: 0 64px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 32px;
+    /* row-gap: 64px; */
 }
 
 /* ????????------------------------- */
@@ -343,10 +367,6 @@ footer {
     padding: 12px 24px;
 }
 
-.footer-link a {
-
-    /* padding: 12px 24px; */
-}
 
 
 .footer-logo {
