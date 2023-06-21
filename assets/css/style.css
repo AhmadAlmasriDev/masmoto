@@ -21,16 +21,7 @@ Eerie black: #191919
 
 
 
-.dots {
-    /* width: 240px;
-    height: 240px; */
-    background-color: #b1b1b1;
-    background-image: radial-gradient(#313131 2px, transparent 0);
 
-    background-size: 40px 40px;
-    background-position: 0 0, 30px 30px;
-    background-repeat: repeat;
-}
 
 body {
     position: relative;
@@ -70,6 +61,24 @@ a {
 }
 
 /* ---------------------------Home Page-------------------------------------- */
+
+/* ---------------------------SVG Colors------------------------------------- */
+
+.main-logo-color-1 {
+    fill: #ed1d24;
+}
+
+.main-logo-color-2 {
+    fill: #000000;
+}
+
+.footer-logo-color {
+    fill: #b1b1b1;
+}
+
+
+
+/* ---------------------------Background------------------------------------- */
 
 /* Split---------------------------- */
 .split {
@@ -111,8 +120,42 @@ a {
     height: 70vh;
 }
 
-/* ---------------------------Home Page-------------------------------------- */
+/* Dots----------------------------- */
+.dots {
+    /* width: 240px;
+    height: 240px; */
+    background-color: #b1b1b1;
+    background-image: radial-gradient(#313131 2px, transparent 0);
 
+    background-size: 40px 40px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+/* Backgroud Logo---------------------------- */
+.back-logo-container {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 2vh 0 0 0;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.back-logo-container>div {
+    max-width: 1400px;
+    /* padding: 5vh; */
+    width: 70%;
+    opacity: .5;
+}
+
+.back-logo {
+    width: 100%;
+}
+
+/* ---------------------------Header----------------------------------------- */
 #header {
     /* position: absolute; */
     /* z-index: 1; */
@@ -135,14 +178,12 @@ a {
 
 }
 
+/* Logo----------------------------- */
 .logo-container {
     width: 50%;
 }
 
-
-
-
-
+/* Nav Menu------------------------- */
 .nav-menu {
 
     font-size: 200%;
@@ -212,12 +253,6 @@ a {
 }
 
 
-
-
-
-
-
-
 /* ---------------altirnative  hover ------------------------------------------------ */
 /* .nav-menu a {
     padding: 12px 12px;
@@ -267,9 +302,7 @@ a {
 
 /* ----------------------------------------------------------------------------- */
 
-
-
-
+/* ---------------------------Main Section----------------------------------- */
 
 
 #main-sec {
@@ -282,30 +315,10 @@ a {
 
 }
 
-.back-logo-container {
-    position: absolute;
-    z-index: 0;
-    height: 100vh;
-    width: 100%;
-    padding: 2vh 0 0 0;
-    flex-direction: column;
-    justify-content: start;
+/* ????????------------------------- */
 
-}
 
-.back-logo-container>div {
-    max-width: 1400px;
-    /* padding: 5vh; */
-    width: 70%;
-    opacity: .5;
-}
-
-.back-logo {
-    width: 100%;
-}
-
-/* _______________________________________________________ */
-
+/* ---------------------------Footer----------------------------------------- */
 
 footer {
 
@@ -339,6 +352,7 @@ footer {
 }
 
 img {
+    color: red;
 
     width: 90%;
 
@@ -348,6 +362,25 @@ img {
 .footer-link {
     padding: 12px 24px;
 }
+
+
+.footer-logo {
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
