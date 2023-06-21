@@ -31,13 +31,7 @@ body {
     color: #ffffff;
 }
 
-.st0 {
-    fill: #ed1d24;
-}
 
-.st1 {
-    fill: #000000;
-}
 
 li {
     list-style-type: none;
@@ -72,7 +66,7 @@ a {
     fill: #000000;
 }
 
-.footer-logo-color {
+svg {
     fill: #b1b1b1;
 }
 
@@ -351,21 +345,29 @@ footer {
 
 }
 
-img {
-    color: red;
-
-    width: 90%;
-
-    /* margin: 12px 24px; */
-}
-
 .footer-link {
     padding: 12px 24px;
 }
 
+.footer-link a {
+
+    /* padding: 12px 24px; */
+}
+
+
 
 .footer-logo {
+
+    padding: 10px 10px 0 10px;
     width: 90%;
+}
+
+.footer-link a {
+    color: #b1b1b1;
+}
+
+.footer-link a:hover {
+    color: #3131317d;
 }
 
 
