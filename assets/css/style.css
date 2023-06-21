@@ -56,19 +56,11 @@ a {
 
 /* ---------------------------Home Page-------------------------------------- */
 
-/* ---------------------------SVG Colors------------------------------------- */
 
-.main-logo-color-1 {
-    fill: #ed1d24;
-}
 
-.main-logo-color-2 {
-    fill: #000000;
-}
 
-svg {
-    fill: #b1b1b1;
-}
+
+
 
 
 
@@ -173,6 +165,14 @@ svg {
 }
 
 /* Logo----------------------------- */
+.main-logo-color-1 {
+    fill: #ed1d24;
+}
+
+.main-logo-color-2 {
+    fill: #000000;
+}
+
 .logo-container {
     width: 50%;
 }
@@ -218,8 +218,6 @@ svg {
 
 .nav-menu a {
     padding: 12px 24px;
-    /* border: solid 1px #31313100; */
-    /* text-align: center; */
     text-transform: uppercase;
 }
 
@@ -228,11 +226,7 @@ svg {
 }
 
 .nav-menu a:hover {
-    /* background-color: #ed1d24; */
-    /* padding: 12px 24px; */
     border-radius: 5px;
-    /* border: solid 1px #313131; */
-    /* color: #ffffff; */
     box-shadow: inset 2px 2px 6px #0000008f
 }
 
@@ -291,8 +285,8 @@ svg {
 
 #right-nav-menu a {
     color: #ffffff;
-}
- */
+} */
+
 
 /* ----------------------------------------------------------------------------- */
 
@@ -353,7 +347,6 @@ footer {
 
     /* padding: 12px 24px; */
 }
-
 
 
 .footer-logo {
