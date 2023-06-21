@@ -37,9 +37,30 @@ li {
     list-style-type: none;
 }
 
-#logo {
-    width: 150px;
+
+/* h1 {
+    font-size: 55px;
+    margin-bottom: 18px;
+} */
+
+h2 {
+    font-size: 55px;
+    margin-bottom: 24px;
+
 }
+
+h3 {
+    font-size: 38px;
+    margin-bottom: 12px;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+}
+
 
 
 .flex-container {
@@ -79,8 +100,18 @@ a {
 
 }
 
+.per-20 {
+    width: 20%;
+}
+
+.per-80 {
+    width: 80%;
+
+}
+
 .right-split {
     background-color: #ed1d24;
+    width: 100%;
 
 }
 
@@ -165,6 +196,10 @@ a {
 }
 
 /* Logo----------------------------- */
+#logo {
+    width: 150px;
+}
+
 .main-logo-color-1 {
     fill: #ed1d24;
 }
@@ -174,7 +209,7 @@ a {
 }
 
 .logo-container {
-    width: 50%;
+    width: 20%;
 }
 
 /* Nav Menu------------------------- */
@@ -197,7 +232,7 @@ a {
 }
 
 .left-nav-container {
-    width: 50%;
+    width: 80%;
 }
 
 
@@ -295,7 +330,7 @@ a {
 
 #main-sec {
     /* visibility: hidden; */
-    margin-top: 170px;
+    margin-top: 220px;
     color: #000000;
     position: absolute;
     top: 0;
@@ -306,28 +341,115 @@ a {
 }
 
 .utilities-container {
-    background-color: blue;
+    padding: 64px;
+    /* background-color: #313131cc;
+    border: solid #313131 3px; */
+    border-radius: 10px;
     width: 70%;
     max-width: 1400px;
+
+    /* box-shadow: inset 15px, 10px, rgb(255, 255, 255); */
 }
 
-.utility-card {
-    background-color: magenta;
-    width: 200px;
-    height: 300px;
-}
+
 
 .cards-container {
-    padding: 0 64px;
-    margin: 0 auto;
+    /* padding: 0 64px; */
+    width: 100%;
+    margin: 64px 0 32px 0;
+
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     column-gap: 32px;
     /* row-gap: 64px; */
 }
 
-/* ????????------------------------- */
+.card-container {
+    flex-direction: column;
+    padding: 0;
+}
+
+.utility-card {
+    padding: 25px 20px;
+    /* background-color: #313131; */
+    /* border: solid #313131 5px; */
+    border-radius: 15px;
+
+    /* width: 200px;
+    height: 300px; */
+    /* background-color: #F5F5F5; */
+
+
+    /* box-shadow: inset 15px, 10px #000000; */
+}
+
+.card-logo {
+    font-size: 600%;
+    padding: 20px;
+    min-width: 180px;
+    text-align: center;
+    border: solid #ed1d24b6 10px;
+    background-color: #F5F5F5e6;
+    border-radius: 15px;
+}
+
+.card-logo i {
+    color: #f3141480;
+
+}
+
+.utility-name {
+    color: #F5F5F5;
+    margin-top: 8px;
+}
+
+.utilities-header {
+    padding: 0 64px 0 0;
+    color: #F5F5F5;
+
+}
+
+.utilities-info {
+    padding: 0 0 0 64px;
+
+}
+
+.info-block-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+}
+
+.info-block {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+/* 
+<div id="specs" class="utility-card">
+    <a href="#">
+        <div class="card-container flex-container">
+            <div class="card-logo">
+                <div>
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="utility-name">specs</h3>
+            </div>
+        </div>
+    </a>
+</div> */
+
+
+
+
+
 
 
 /* ---------------------------Footer----------------------------------------- */
@@ -394,71 +516,6 @@ footer {
 
 
 
-
-
-
-
-
-
-/* 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-}
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-/* 
-#nav-menu {
-    font-family: Inter, sans-serif;
-    font-size: 120%;
-    font-weight: 500;
-    padding: 0;
-}
-
-#nav-menu li {
-    list-style-type: none;
-}
-
-#nav-menu a {
-    padding: 24px;
-}
-
-#nav-menu a:hover {
-    background-color: #c44536;
-    padding: 12px 24px;
-    border-radius: 50px;
-    color: #ffffff;
-}
- */
 
 
 
