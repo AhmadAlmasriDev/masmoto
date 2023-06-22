@@ -61,17 +61,19 @@ p {
     margin-bottom: 20px;
 }
 
-option {
+select {
     font-family: Rajdhani, sans-serif;
     font-weight: 600;
     font-size: 22px;
 }
 
-/* ::placeholder {
-    font-family: Rajdhani, sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-} */
+option {
+
+    font-weight: 500;
+
+}
+
+
 
 .flex-container {
     display: flex;
@@ -84,6 +86,7 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+
 
 /* ---------------------------Home Page-------------------------------------- */
 
@@ -448,9 +451,9 @@ a {
 
 /* ---------------------------Specs------------------------------------------ */
 #specs-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     margin-top: 220px;
-
+    color: #191919;
     position: absolute;
     top: 0;
     right: 0;
@@ -465,18 +468,52 @@ a {
     max-width: 1400px;
 }
 
-option::placeholder {}
 
-.specs-container {
+
+.specs-header {
     width: 100%;
+    justify-content: space-between;
 }
 
 
 
 
+.specs-image-container {
+    width: 75%;
+}
 
+.specs-image-container {
+    width: 100%;
+}
 
+.info-container {
+    width: 25%;
+}
 
+.info-container ul,
+.info-container li {
+
+    padding: 0;
+}
+
+.info-container ul {
+    flex-direction: column;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    /* column-gap: 32px;
+        row-gap: 64px; */
+}
+
+.spec-name,
+.spec-value {
+    font-size: 200%;
+    font-weight: 500;
+}
 
 
 
