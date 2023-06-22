@@ -369,6 +369,13 @@ a {
 .card-container {
     flex-direction: column;
     padding: 0;
+    transition: .5s ease;
+    color: #ed1d2480;
+}
+
+.card-container:hover {
+    transform: scale(1.1) translateY(-10px);
+    color: #f31414;
 }
 
 .utility-card {
@@ -391,14 +398,26 @@ a {
     min-width: 180px;
     text-align: center;
     border: solid #313131 10px;
+
     background-color: #F5F5F5e6;
     border-radius: 15px;
+    box-shadow: inset 0px 0px 25px #313131e6;
+
 }
+
+/* .card-logo:hover {
+    transform: scale(1.1) translateY(-10px);
+    color: #f31414;
+
+} */
+
 
 .card-logo i {
-    color: #f3141480;
+    color: inherit;
 
 }
+
+
 
 .utility-name {
     color: #F5F5F5;
