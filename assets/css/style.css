@@ -452,7 +452,7 @@ a {
 /* ---------------------------Specs------------------------------------------ */
 #specs-sec {
     /* visibility: hidden; */
-    margin-top: 220px;
+    margin-top: 200px;
     color: #191919;
     position: absolute;
     top: 0;
@@ -462,10 +462,15 @@ a {
     /* margin-bottom: 100px; */
 }
 
+#specs-sec>div {
+    /* height: 500px; */
+}
+
 .specs-container {
     flex-direction: column;
     width: 100%;
     max-width: 1400px;
+    padding: 0;
 }
 
 .specs-header-container {
@@ -475,6 +480,7 @@ a {
     padding: 16px 32px;
     width: 70%;
     min-width: 500px;
+    margin-bottom: 16px;
 }
 
 .specs-header {
@@ -491,20 +497,38 @@ a {
 
 
 .specs-image-container {
-    width: 75%;
+    width: 60%;
+    height: 465px;
     background-color: #191919bf;
     border: solid 5px #191919;
     border-radius: 15px;
     overflow: hidden;
+
 }
 
 .specs-image-container img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+
+}
+
+.specs-main-info-container {
+    align-items: flex-start;
+    padding: 0;
 }
 
 .info-container {
-    width: 25%;
+    width: 40%;
+    /* height: 470px; */
+    min-width: 350px;
+    color: #ffffff;
+    background-color: #191919bf;
+    border: solid #191919 3px;
+    border-radius: 15px;
+    padding: 16px 24px;
+    margin-left: 64px;
+
 }
 
 .info-container ul,
@@ -516,20 +540,29 @@ a {
 .info-container ul {
     flex-direction: column;
 
+
+}
+
+.info-container>h2 {
+    margin-bottom: 0;
+    font-size: 50px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    /* column-gap: 32px;
-        row-gap: 64px; */
+
+    column-gap: 32px;
+    row-gap: 5px;
 }
+
 
 .spec-name,
 .spec-value {
     font-size: 200%;
     font-weight: 500;
+    min-width: 150px;
 }
 
 
