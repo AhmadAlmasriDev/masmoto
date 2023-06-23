@@ -468,21 +468,36 @@ a {
     max-width: 1400px;
 }
 
-
+.specs-header-container {
+    background-color: #191919bf;
+    border: solid 3px #191919;
+    border-radius: 10px;
+    padding: 16px 32px;
+    width: 70%;
+    min-width: 500px;
+}
 
 .specs-header {
     width: 100%;
     justify-content: space-between;
+    padding: 0;
 }
 
-
+.specs-header select {
+    font-size: 28px;
+    width: 20%;
+    border-radius: 5px;
+}
 
 
 .specs-image-container {
     width: 75%;
+    background-color: #191919bf;
+    border: solid 3px #191919;
+    border-radius: 15px;
 }
 
-.specs-image-container {
+.specs-image-container img {
     width: 100%;
 }
 
