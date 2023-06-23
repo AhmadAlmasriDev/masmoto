@@ -587,8 +587,31 @@ a {
     margin-bottom: 10px;
 }
 
+/* ---------------------------Paint Shop------------------------------------- */
 
 
+
+/* ---------------------------Links------------------------------------------ */
+#links-sec {
+    /* visibility: hidden; */
+    /* margin-top: 200px; */
+    color: #191919;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    /* margin-bottom: 100px; */
+}
+
+.links-main-container {
+    background-color: #19191980;
+
+}
+
+.links-container {
+    flex-direction: column;
+}
 
 /* ---------------------------Footer----------------------------------------- */
 
