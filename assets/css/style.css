@@ -396,9 +396,15 @@ a {
     color: #191919;
 }
 
+#specs h3,
+#quiz h3 {
+    text-shadow: 1px 1px 10px #1919194d;
+}
+
 .utilities-header {
     padding: 0 64px 0 0;
     color: #F5F5F5;
+    text-shadow: 1px 1px 10px #1919194d;
 
 }
 
