@@ -620,6 +620,8 @@ a {
     width: 100%;
     max-width: 1400px;
     min-height: 65vh;
+    padding: 0;
+    align-items: flex-start;
     /* background-color: #00000080; */
 
 }
@@ -639,11 +641,12 @@ a {
 }
 
 .r1-f1-image-container {
-    width: 33%;
+    width: 33.5%;
+    /* height: 100%; */
     padding: 0;
     flex-direction: column;
     /* align-items: flex-start; */
-    gap: 0;
+
 }
 
 .paint-controls-conatainer {
@@ -665,18 +668,44 @@ a {
 .r1-image,
 .f1-image {
     width: 100%;
+    /* height: 100%; */
 }
 
-.s1-image {
+.s1-image,
+.f1-image,
+.r1-image {
     position: relative;
+    z-index: 3;
     width: 100%;
 }
 
 .overlay {
     position: absolute;
-    z-index: 4;
+    z-index: 6;
+    mix-blend-mode: color-burn;
+}
+
+.paint-image-container svg {
+    position: absolute;
+    z-index: 5;
     mix-blend-mode: darken;
 }
+
+.stripe-color {
+    color: black;
+}
+
+.body-color {
+    color: rgb(255, 0, 0);
+}
+
+.paint-background-image {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 4;
+}
+
 
 
 /* ---------------------------Links------------------------------------------ */
