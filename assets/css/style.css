@@ -602,10 +602,9 @@ a {
 /* ---------------------------Paint Shop------------------------------------- */
 
 
-
 /* ---------------------------Links------------------------------------------ */
 #links-sec {
-    /* visibility: hidden; */
+    visibility: hidden;
     /* margin-top: 200px; */
     color: #ffffff;
     position: absolute;
