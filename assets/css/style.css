@@ -695,23 +695,30 @@ a {
 }
 
 .overlay {
+
+    /* visibility: hidden; */
     position: absolute;
-    z-index: 6;
-    mix-blend-mode: color-burn;
+    z-index: 7;
+    mix-blend-mode: multiply;
+    opacity: .5;
 }
 
-.paint-image-container svg {
-    position: absolute;
-    z-index: 5;
-    mix-blend-mode: darken;
-}
 
 .stripe-color {
-    color: black;
+    padding-top: 3px;
+    position: absolute;
+    color: #ff0000;
+    z-index: 6;
+    mix-blend-mode: hard-light;
 }
 
 .body-color {
-    color: rgb(255, 0, 0);
+    padding-top: 3px;
+    position: absolute;
+    z-index: 5;
+    mix-blend-mode: darken;
+    color: #000000cc;
+
 }
 
 .paint-background-image {
@@ -721,7 +728,15 @@ a {
     z-index: 4;
 }
 
+/* Stripe Control------------------ */
+/* 1------------- */
+.f1-guard .stripe-1,
+{}
 
+/* 2------------- */
+.f1-tank .stripe-2,
+.f1-guard .stripe-2,
+{}
 
 /* ---------------------------Links------------------------------------------ */
 #links-sec {
