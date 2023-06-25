@@ -269,6 +269,77 @@
         </div>
     </div>
 
+    <!-- _________________________Quiz_______________________________ -->
+    <div id="quiz-sec">
+        <div class="quiz-main-container flex-container">
+            <!-- vertial flex____________ -->
+            <div class="quiz-container flex-container">
+                <div class="quiz-header">
+                    <div class="question-num-container">
+                        <h3 id="question-num">Qestion: <span>0 / 10</span></h3>
+                    </div>
+                    <!-- vertical flex_____________ -->
+                    <div class="score-container flex-container">
+                        <div class="correct-container">
+                            <h3 id="correct-answers">Correct: <span>0</span></h3>
+                        </div>
+                        <div class="wrong-container">
+                            <h3 id="wrong-answers">Wrong: <span>0</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- vertical container____________ -->
+                <div class="quiz-body flex-container">
+                    <div class="question-area">
+                        <p id="qustion">some question?</p>
+                    </div>
+                    <!-- vertical container____________ -->
+                    <div class="answers-container flex-container">
+                        <h3>Choose an answer</h3>
+                        <div class="answers flex-container">
+                            <!-- vertical container____________ -->
+                            <div class="flex-container">
+                                <ul class="answer-container">
+                                    <li>
+                                        <a class="answer correct" data-correct="true" href="#"
+                                            aria-label="one of the answers to the question above">
+                                            <span>some answer.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="answer wrong" data-correct="true" href="#"
+                                            aria-label="one of the answers to the question above">
+                                            <span>some answer.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-container">
+                                <ul class="answer-container">
+                                    <li>
+                                        <a class="answer correct" data-correct="true" href="#"
+                                            aria-label="one of the answers to the question above">
+                                            <span>some answer.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="answer wrong" data-correct="false" href="#"
+                                            aria-label="one of the answers to the question above">
+                                            <span>some answer.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- _________________________Paint Shop_________________________ -->
     <div id="paint-sec">
         <div class="paint-main-container flex-container">
@@ -384,23 +455,6 @@
                             </div>
                             <div class="stripe-main-container">
                                 <h3>Stripe Type</h3>
-                                <!-- <ul class="stripe-radio-container">
-                                    <li>
-                                        <input class="stripe-radio" type="radio" id="stripe-0" name="stripe-0" value="0"
-                                            checked>
-                                        <label for="stripe-0">None</label>
-                                    </li>
-                                    <li>
-                                        <input class="stripe-radio" type="radio" id="stripe-1" name="stripe-1"
-                                            value="1">
-                                        <label for="stripe-1">Classic</label>
-                                    </li>
-                                    <li>
-                                        <input class="stripe-radio" type="radio" id="stripe-2" name="stripe-2"
-                                            value="2">
-                                        <label for="stripe-2">Wave</label>
-                                    </li>
-                                </ul> -->
                                 <div class="stripe-input">
                                     <input type="radio" id="stripe-0" name="stripe" value="0" checked>
                                     <label for="stripe-0">None</label><br>
