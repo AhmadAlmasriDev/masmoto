@@ -728,6 +728,31 @@ a {
     z-index: 4;
 }
 
+/* Position Correction------------- */
+/* S1------------------- */
+.s1-tank.body-color {
+    padding-left: 2px;
+}
+
+.s1-guard.stripe-1 {
+    padding: 7px 0 0 10px;
+
+}
+
+.s1-guard.stripe-2 {
+    padding: 7px 0 20px 10px;
+}
+
+.s1-guard.body-color {
+    padding: 7px 0 0 10px;
+}
+
+/* F1------------------- */
+.f1-guard.body-color {
+    padding-top: 4px;
+}
+
+
 /* Stripe Control------------------ */
 /* 1------------- */
 .f1-guard .stripe-1,
