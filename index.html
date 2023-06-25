@@ -369,23 +369,46 @@
                     <div class="paint-controls-conatainer">
                         <form id="controls">
                             <h3>Choose Color</h3>
-                            <div class="color-input">
-                                <input type="color" id="body-color" name="body-color" value="#000000">
-                                <label for="body-color">Body Color</label>
-                            </div>
+                            <div class="picker-container flex-container">
+                                <div class="color-input">
+                                    <input class="color-picker" type="color" id="body-color" name="body-color"
+                                        value="#000000">
+                                    <label for="body-color">Body</label>
+                                </div>
 
-                            <div class="color-input">
-                                <input type="color" id="stripe-color" name="stripe-color" value="#ed1d24">
-                                <label for="stripe-color">Stripe Color</label>
+                                <div class="color-input ">
+                                    <input class="color-picker" type="color" id="stripe-color" name="stripe-color"
+                                        value="#ed1d24">
+                                    <label for="stripe-color">Stripe</label>
+                                </div>
                             </div>
-                            <h3>Stripe Type</h3>
-                            <div class="stripe-input">
-                                <input type="radio" id="stripe-0" name="stripe-0" value="0" checked>
-                                <label for="stripe-0">None</label><br>
-                                <input type="radio" id="stripe-1" name="stripe-1" value="1">
-                                <label for="stripe-1">Classic</label><br>
-                                <input type="radio" id="stripe-2" name="stripe-2" value="2">
-                                <label for="stripe-2">Wave</label><br>
+                            <div class="stripe-main-container">
+                                <h3>Stripe Type</h3>
+                                <!-- <ul class="stripe-radio-container">
+                                    <li>
+                                        <input class="stripe-radio" type="radio" id="stripe-0" name="stripe-0" value="0"
+                                            checked>
+                                        <label for="stripe-0">None</label>
+                                    </li>
+                                    <li>
+                                        <input class="stripe-radio" type="radio" id="stripe-1" name="stripe-1"
+                                            value="1">
+                                        <label for="stripe-1">Classic</label>
+                                    </li>
+                                    <li>
+                                        <input class="stripe-radio" type="radio" id="stripe-2" name="stripe-2"
+                                            value="2">
+                                        <label for="stripe-2">Wave</label>
+                                    </li>
+                                </ul> -->
+                                <div class="stripe-input">
+                                    <input type="radio" id="stripe-0" name="stripe" value="0" checked>
+                                    <label for="stripe-0">None</label><br>
+                                    <input type="radio" id="stripe-1" name="stripe" value="1">
+                                    <label for="stripe-1">Classic</label><br>
+                                    <input type="radio" id="stripe-2" name="stripe" value="2">
+                                    <label for="stripe-2">Wave</label><br>
+                                </div>
                             </div>
                         </form>
 
