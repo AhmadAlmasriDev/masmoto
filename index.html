@@ -290,9 +290,9 @@
                             <svg class="s1-tail stripe-2 stripe-color" viewBox="0 0 1280 960">
                                 <use href="#s1-tail-stripe-2"></use>
                             </svg>
-                            <!-- <svg class="s1-guard stripe-1 stripe-color" viewBox="0 0 1280 960">
+                            <svg class="s1-guard stripe-1 stripe-color" viewBox="0 0 1280 960">
                                 <use href="#s1-guard-stripe-1"></use>
-                            </svg> -->
+                            </svg>
 
                             <!-- SVG body-------------------- -->
                             <svg class="s1-tank body-color" viewBox="0 0 1280 960">
@@ -348,9 +348,9 @@
                                 <svg class="r1-tank stripe-1 stripe-color" viewBox="0 0 600 674.25">
                                     <use href="#r1-tank-stripe-1"></use>
                                 </svg>
-                                <!-- <svg class="r1-tank stripe-2 stripe-color" viewBox="0 0 600 674.25">
+                                <svg class="r1-tank stripe-2 stripe-color" viewBox="0 0 600 674.25">
                                     <use href="#r1-tank-stripe-2"></use>
-                                </svg> -->
+                                </svg>
                                 <!-- SVG body-------------------- -->
                                 <svg class="r1-tank body-color" viewBox="0 0 600 674.25">
                                     <use href="#r1-tank"></use>
@@ -366,7 +366,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="paint-controls-conatainer">test
+                    <div class="paint-controls-conatainer">
+                        <form id="controls">
+                            <h3>Choose Color</h3>
+                            <div class="color-input">
+                                <input type="color" id="body-color" name="body-color" value="#000000">
+                                <label for="body-color">Body Color</label>
+                            </div>
+
+                            <div class="color-input">
+                                <input type="color" id="stripe-color" name="stripe-color" value="#ed1d24">
+                                <label for="stripe-color">Stripe Color</label>
+                            </div>
+                            <h3>Stripe Type</h3>
+                            <div class="stripe-input">
+                                <input type="radio" id="stripe-0" name="stripe-0" value="0" checked>
+                                <label for="stripe-0">None</label><br>
+                                <input type="radio" id="stripe-1" name="stripe-1" value="1">
+                                <label for="stripe-1">Classic</label><br>
+                                <input type="radio" id="stripe-2" name="stripe-2" value="2">
+                                <label for="stripe-2">Wave</label><br>
+                            </div>
+                        </form>
+
 
                     </div>
                 </div>
