@@ -274,7 +274,7 @@
         <div class="quiz-main-container flex-container">
             <!-- vertial flex____________ -->
             <div class="quiz-container flex-container">
-                <div class="quiz-header">
+                <div class="quiz-header flex-container">
                     <div class="question-num-container">
                         <h3 id="question-num">Qestion: <span>0 / 10</span></h3>
                     </div>
@@ -293,6 +293,14 @@
                     <div class="question-area">
                         <p id="qustion">some question?</p>
                     </div>
+                    <div class="start-button-container hidden">
+                        <a class="start button" href="#" aria-label="start the game">
+                            START PLAYING
+                        </a>
+                    </div>
+
+
+
                     <!-- vertical container____________ -->
                     <div class="answers-container flex-container">
                         <h3>Choose an answer</h3>
@@ -352,7 +360,7 @@
                             <img class="s1-guard overlay" src="assets/images/s1-guard-overlay.png" alt="guard overlay">
                             <img class="s1-tail overlay" src="assets/images/s1-tail-overlay.png" alt="tail overlay">
                             <!-- SVG----------- -->
-                            <svg class="s1-tank stripe-2 stripe-color" viewBox="0 0 1280 960">
+                            <svg class="s1-tank stripe-2 stripe-color hidden" viewBox="0 0 1280 960">
                                 <use href="#s1-tank-stripe-2"></use>
                             </svg>
                             <svg class="s1-guard stripe-2 stripe-color" viewBox="0 0 1280 960">
@@ -366,13 +374,13 @@
                             </svg>
 
                             <!-- SVG body-------------------- -->
-                            <svg class="s1-tank body-color" viewBox="0 0 1280 960">
+                            <svg style="color:#ff0000cc;" class="s1-tank body-color body" viewBox="0 0 1280 960">
                                 <use href="#s1-tank"></use>
                             </svg>
-                            <svg class="s1-guard body-color" viewBox="0 0 1280 960">
+                            <svg class="s1-guard body-color body" viewBox="0 0 1280 960">
                                 <use href="#s1-guard"></use>
                             </svg>
-                            <svg class="s1-tail body-color" viewBox="4 2 1280 960">
+                            <svg class="s1-tail body-color body" viewBox="4 2 1280 960">
                                 <use href="#s1-tail"></use>
                             </svg>
                             <!-- Background image----------- -->
@@ -398,10 +406,10 @@
                                     <use href="#f1-guard-stripe-2"></use>
                                 </svg>
                                 <!-- SVG body-------------------- -->
-                                <svg class="f1-tank body-color" viewBox="0 0 600 653.25">
+                                <svg class="f1-tank body-color  body" viewBox="0 0 600 653.25">
                                     <use href="#f1-tank"></use>
                                 </svg>
-                                <svg class="f1-guard body-color" viewBox="0 0 600 653.25">
+                                <svg class="f1-guard body-color body" viewBox="0 0 600 653.25">
                                     <use href="#f1-guard"></use>
                                 </svg>
 
@@ -423,10 +431,10 @@
                                     <use href="#r1-tank-stripe-2"></use>
                                 </svg>
                                 <!-- SVG body-------------------- -->
-                                <svg class="r1-tank body-color" viewBox="0 0 600 674.25">
+                                <svg class="r1-tank body-color body" viewBox="0 0 600 674.25">
                                     <use href="#r1-tank"></use>
                                 </svg>
-                                <svg class="r1-tail body-color" viewBox="0 0 600 674.25">
+                                <svg class="r1-tail body-color body" viewBox="0 0 600 674.25">
                                     <use href="#r1-tail"></use>
                                 </svg>
                                 <!-- Background image----------- -->
