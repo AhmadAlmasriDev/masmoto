@@ -12,8 +12,9 @@ function createListeners() {
 
 function updateInfo(event) {
     let infoBlock = document.getElementById("link-info");
-    console.log(this.firstChild.ariaLabel);
-    infoBlock.innerHTML = this.firstChild.ariaLabel;
+    // console.log(this.children.item(0).ariaLabel);
+    // infoBlock.innerHTML = this.firstChild.ariaLabel;
+    infoBlock.innerHTML = this.children.item(0).ariaLabel;
 
 }
 function resetInfo(event) {
