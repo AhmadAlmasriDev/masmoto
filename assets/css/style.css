@@ -489,7 +489,7 @@ a {
 
 /* ---------------------------Specs------------------------------------------ */
 #specs-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #191919;
     position: absolute;
@@ -626,7 +626,7 @@ a {
 
 /* ---------------------------Quiz------------------------------------------- */
 #quiz-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
     position: absolute;
@@ -639,7 +639,7 @@ a {
 
 .quiz-container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1240px;
     flex-direction: column;
     padding: 0;
 }
@@ -744,7 +744,7 @@ a {
 
 #question {
     color: #191919;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 500;
     margin: 0;
     line-height: 50px;
@@ -776,7 +776,7 @@ a {
     border-radius: 25px;
     background-color: #F5F5F5;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 30px;
 
 }
 
@@ -817,7 +817,7 @@ a {
 
 /* ---------------------------Paint Shop------------------------------------- */
 #paint-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
     position: absolute;
@@ -1068,7 +1068,7 @@ a {
 
 /* ---------------------------Links------------------------------------------ */
 #links-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
     position: absolute;
