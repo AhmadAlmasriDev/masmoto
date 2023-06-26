@@ -977,7 +977,7 @@ a {
 .f1-guard.stripe-1,
 .s1-guard.stripe-1,
 .r1-tank.stripe-1 {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 /* 2------------- */
