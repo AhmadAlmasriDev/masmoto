@@ -400,6 +400,7 @@ a {
 /* Info Block----------------------- */
 .info-block-container {
     width: 100%;
+    min-height: 110px;
     max-width: 1400px;
     padding: 0;
 }
@@ -411,6 +412,8 @@ a {
 }
 
 .utilities-info {
+    width: 100%;
+    /* max-width: 400px; */
     padding: 0 0 0 64px;
     color: #191919;
 
@@ -427,6 +430,7 @@ a {
 }
 
 .utilities-header {
+    width: 100%;
     padding: 0 64px 0 0;
     color: #F5F5F5;
     text-shadow: 1px 1px 10px #1919194d;
