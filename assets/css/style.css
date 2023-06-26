@@ -375,7 +375,7 @@ a {
 
 /* ---------------------------Home------------------------------------------- */
 #main-sec {
-    visibility: hidden;
+    /* visibility: hidden; */
     margin-top: 220px;
     /* color: #000000; */
     position: absolute;
@@ -626,7 +626,7 @@ a {
 
 /* ---------------------------Quiz------------------------------------------- */
 #quiz-sec {
-    /* visibility: hidden; */
+    visibility: hidden;
     /* margin-top: 200px; */
     color: #ffffff;
     position: absolute;
