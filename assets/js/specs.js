@@ -68,7 +68,7 @@ function injectMade(list) {
 
 function injectModel(list) {
     // debugger;
-    
+    clearSpecs()
     let modelList = document.getElementById("model");
     let yearList = document.getElementById("year");
     let optionList = `<option value="" disabled selected hidden>Model</option>`;
@@ -91,7 +91,7 @@ function injectModel(list) {
 function injectYear(list) {
     // debugger;
     
-    
+    clearSpecs()
     let yearList = document.getElementById("year");
     let optionList = `<option value="" disabled selected hidden>Year</option>`;
     for (let item of list) {
@@ -128,6 +128,26 @@ function injectSpecs(specs) {
     clutch.innerHTML=clutchTemp.split(" ")[0]
     cooling.innerHTML=specs.cooling?specs.cooling : "-";
     weight.innerHTML=specs.total_weight?`${specs.total_weight.split(" ")[0]} KG` : "-";
+}
+function clearSpecs() {
+    // debugger;
+    let category = document.getElementById("category");
+    let power = document.getElementById("power");
+    let engine = document.getElementById("engine");
+    let drive = document.getElementById("drive");
+    let gear = document.getElementById("gear");
+    let clutch = document.getElementById("clutch");
+    let cooling = document.getElementById("cooling");
+    let weight = document.getElementById("weight");
+    
+    category.innerHTML=""
+    power.innerHTML=""
+    engine.innerHTML=""
+    drive.innerHTML=""
+    gear.innerHTML=""
+    clutch.innerHTML=""
+    cooling.innerHTML=""
+    weight.innerHTML=""
 }
 
 
