@@ -1,3 +1,5 @@
+const APILINK = "https://mocki.io/v1/7d0a7663-95a3-40c4-be5c-a13fc7f0908e";
+
 document.addEventListener("DOMContentLoaded", LoadMakeList);
 
 /**
@@ -265,7 +267,7 @@ function getSpecs(data) {
  */
 function getData() {
 
-    let url = "https://mocki.io/v1/7d0a7663-95a3-40c4-be5c-a13fc7f0908e";
+    let url = APILINK;
     const options = {
         method: 'GET',
         contentType: 'application/json'
