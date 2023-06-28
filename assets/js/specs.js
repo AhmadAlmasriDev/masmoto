@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", LoadMakeList);
 
-
+/**
+ * Loads the make list with info from the data file
+ */
 function LoadMakeList() {
     (async () => {
         const result = await getData();
@@ -14,7 +16,9 @@ function LoadMakeList() {
 
 // --------------------------------------------------
 
-
+/**
+ * Loads the model list with info from the data file
+ */
 function LoadModelList() {
     (async () => {
         const result = await getData();
@@ -26,7 +30,9 @@ function LoadModelList() {
 
 // --------------------------------------------------
 
-
+/**
+ * Loads the year list with info from the data file
+ */
 function LoadYearList() {
     (async () => {
         const result = await getData();
@@ -47,7 +53,9 @@ function LoadSpecs() {
 
 // --------------------------------------------------
 
-
+/**
+ * Inject the data from array in to the made list (html option list)
+ */
 function injectMade(list) {
     injectSpecs();
     // debugger;
@@ -70,7 +78,9 @@ function injectMade(list) {
 // --------------------------------------------------
 
 
-
+/**
+ * Inject the data from array in to the model list (html option list)
+ */
 function injectModel(list) {
     // debugger;
     injectSpecs();
@@ -92,7 +102,9 @@ function injectModel(list) {
 // --------------------------------------------------
 
 
-
+/**
+ * Inject the data from array in to the year list (html option list)
+ */
 function injectYear(list) {
     // debugger;
 
@@ -110,7 +122,9 @@ function injectYear(list) {
     yearList.addEventListener("input", LoadSpecs);
 }
 
-
+/**
+ * Inject and reset the data from array in to the specs html container
+ */
 function injectSpecs(specs) {
 
     let image = document.getElementById("moto-image");
@@ -153,29 +167,14 @@ function injectSpecs(specs) {
 
 
 }
-// function clearSpecs() {
-//     // debugger;
-//     let category = document.getElementById("category");
-//     let power = document.getElementById("power");
-//     let engine = document.getElementById("engine");
-//     let drive = document.getElementById("drive");
-//     let gear = document.getElementById("gear");
-//     let clutch = document.getElementById("clutch");
-//     let cooling = document.getElementById("cooling");
-//     let weight = document.getElementById("weight");
 
-//     category.innerHTML=""
-//     power.innerHTML=""
-//     engine.innerHTML=""
-//     drive.innerHTML=""
-//     gear.innerHTML=""
-//     clutch.innerHTML=""
-//     cooling.innerHTML=""
-//     weight.innerHTML=""
-// }
 
 
 // --------------------------------------------------
+
+/**
+ * Create a makes array from the data file and returns it
+ */
 function getMake(data) {
     let makeList = [];
     for (let item of data) {
@@ -189,7 +188,9 @@ function getMake(data) {
 
 // --------------------------------------------------
 
-
+/** 
+ * Create a models array from the data file and returns it 
+*/
 function getModel(data) {
     // debugger
     currentMake = document.getElementById("make");
@@ -209,7 +210,9 @@ function getModel(data) {
 }
 
 // --------------------------------------------------
-
+/**
+ * Create a years array from the data file and returns it   
+ */
 function getYear(data) {
     let currentMake = document.getElementById("make");
     let currentmodel = document.getElementById("model");
@@ -231,7 +234,9 @@ function getYear(data) {
     return yearsList;
 }
 
-
+/**
+ * Filters the data file and returns a specs object 
+ */
 function getSpecs(data) {
     // debugger
     let currentMake = document.getElementById("make");
@@ -255,7 +260,9 @@ function getSpecs(data) {
 // --------------------------------------------------
 
 
-
+/**
+ * Fetsh data file from API
+ */
 function getData() {
 
     let url = "https://mocki.io/v1/7d0a7663-95a3-40c4-be5c-a13fc7f0908e";
