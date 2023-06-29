@@ -762,15 +762,26 @@ a {
 
 .start-button-container {
     position: absolute;
-    width: 30%;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.start-button {
+
+
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     border: solid 5px #191919;
     border-radius: 25px;
-    padding: 32px 16px;
+    padding: 32px 32px;
     background-color: #ff5353;
     box-shadow: inset 2px 2px 6px #19191999;
+}
+
+.start-button:hover {
+
+    background-color: #15fd00;
 }
 
 .answers-main-container {
