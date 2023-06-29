@@ -68,17 +68,17 @@
                 <div class="quiz-header flex-container">
                     <div>
                         <div class="question-num-container background-dark align-left">
-                            <h3 id="question-num">Qestion: <span>0 / 10</span></h3>
+                            <h3>Qestion: <span id="question-num">0</span> / 10</h3>
                         </div>
                     </div>
                     <div>
                         <!-- vertical flex_____________ -->
                         <div class="score-container flex-container background-dark align-right">
                             <div class="correct-container">
-                                <h3 id="correct-answers">Correct: <span>0</span></h3>
+                                <h3>Correct: <span id="correct-answers">0</span></h3>
                             </div>
                             <div class="wrong-container">
-                                <h3 id="wrong-answers">Wrong: <span>0</span></h3>
+                                <h3>Wrong: <span id="wrong-answers">0</span></h3>
                             </div>
                         </div>
                     </div>
@@ -87,31 +87,32 @@
                 <div class="quiz-body v-flex-container background-dark">
                     <div class="question-area ">
                         <div class="v-flex-container">
-                            <p id="question">the most used brake while the road is wet is:</p>
+                            <p id="question">Check your knowledge about motorcycles.</p>
                         </div>
                     </div>
-                    <div class="start-button-container hidden">
-                        <a class="start button" href="#" aria-label="start the game">
-                            START PLAYING
-                        </a>
-                    </div>
+
 
 
 
                     <!-- vertical container____________ -->
-                    <div class="answers-main-container flex-container">
-                        <div class="answers flex-container">
+                    <div class="answers-main-container v-flex-container  ">
+                        <div class="start-button-container">
+                            <a class="start-button" href="#" aria-label="start the game">
+                                START PLAYING
+                            </a>
+                        </div>
+                        <div class="answers flex-container   hidden">
                             <!-- vertical container____________ -->
                             <div class="flex-container">
                                 <ul class="answer-container">
                                     <li>
-                                        <button class="answer correct" data-correct="true" type="button">A-
+                                        <button id="answer-a" class="answer correct" data-correct="" type="button">A-
                                             <span>some
                                                 answer.</span></button>
 
                                     </li>
                                     <li>
-                                        <button class="answer wrong" data-correct="false" type="button">B-
+                                        <button id="answer-b" class="answer wrong" data-correct="" type="button">B-
                                             <span>some
                                                 answer.</span></button>
                                     </li>
@@ -120,11 +121,11 @@
                             <div class="flex-container">
                                 <ul class="answer-container">
                                     <li>
-                                        <button class="answer" data-correct="false" type="button">C- <span>some
+                                        <button id="answer-c" class="answer" data-correct="" type="button">C- <span>some
                                                 answer.</span></button>
                                     </li>
                                     <li>
-                                        <button class="answer" data-correct="false" type="button">D- <span>some
+                                        <button id="answer-d" class="answer" data-correct="" type="button">D- <span>some
                                                 answer.</span></button>
                                     </li>
                                 </ul>
