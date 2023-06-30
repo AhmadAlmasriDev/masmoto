@@ -84,7 +84,7 @@ function injectQuiz(q) {
     gameQuestion.innerHTML = q.question;
 
     for (let i = 0; i < allAnswersLi.length; i++) {
-        allAnswersLi[i].innerHTML = `<button class="answer" value="${Object.keys(q.answer)[i]}" data-ans="${q.correct}" type="button">${Object.keys(q.answer)[i].toUpperCase()}- <span>${q.answer[Object.keys(q.answer)[i]]}</span></button>`;
+        allAnswersLi[i].innerHTML = `<button id = "${Object.keys(q.answer)[i]}" class="answer" value="${Object.keys(q.answer)[i]}" data-ans="${q.correct}" type="button">${Object.keys(q.answer)[i].toUpperCase()}- <span>${q.answer[Object.keys(q.answer)[i]]}</span></button>`;
     }
 
     let allAnswers = document.getElementsByClassName("answer");
@@ -98,17 +98,24 @@ function checkAnswer(e) {
     let correctAnswer = e.getAttribute("data-ans");
     // console.log(correctAnswer);
 
-    return e.value === correctAnswer ? true : false;
+    return e.id === correctAnswer ? true : false;
 }
 
 function showResult() {
     console.log(this);
     if (checkAnswer(this)) {
-        console.log("yes");
+        this.classList.add("correct");
     } else {
-        console.log("no");
+
+        let correct = document.getElementById(this.getAttribute("data-ans"));
+        console.log(correct);
+        this.classList.add("wrong");
+        correct.classList.add("correct");
     }
 }
+
+
+
 /**
  * Loads the make list with info from the data file
  */
