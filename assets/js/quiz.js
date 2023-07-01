@@ -30,42 +30,30 @@ function gameSet(res) {
 
 function gameStart() {
     console.log("game start");
-    scoreUpdate();
+    scoreUpdate("reset");
     questionNumUpdate();
     gameSet(false);
     loadQuiz();
 
-    // let gameContinue = true;
-    // while (gameContinue) {
-
-
-    //     let gameQustionNum = document.getElementById("question-num");
-
-    //     let gameQustion = document.getElementById("question");
-    //     let gameAnswerA = document.getElementById("answer-a");
-    //     let gameAnswerB = document.getElementById("answer-b");
-    //     let gameAnswerC = document.getElementById("answer-c");
-    //     let gameAnswerD = document.getElementById("answer-d");
-
-
-
-    // }
 }
 
 
 function scoreUpdate(res) {
     let gameScoreCorrect = document.getElementById("correct-answers");
     let gameScoreWrong = document.getElementById("wrong-answers");
-    if (res) {
-        if (res === true) {
+    switch (res) {
+        case "correct":
             gameScoreCorrect.innerHTML = parseInt(gameScoreCorrect.innerHTML) + 1;
-        } else {
+            break;
+        case "wrong":
             gameScoreWrong.innerHTML = parseInt(gameScoreWrong.innerHTML) + 1;
-        }
-    } else {
-        gameScoreCorrect.innerHTML = "0";
-        gameScoreWrong.innerHTML = "0";
+            break;
+        case "reset":
+            gameScoreCorrect.innerHTML = "0";
+            gameScoreWrong.innerHTML = "0";
+            break;
     }
+
 }
 
 function questionNumUpdate(res) {
@@ -91,8 +79,10 @@ function injectQuiz(q) {
     for (let item of allAnswers) {
         item.addEventListener("click", showResult);
     }
-
+    questionNumUpdate(true);
 }
+
+
 function checkAnswer(e) {
     // console.log(this.value);
     let correctAnswer = e.getAttribute("data-ans");
@@ -103,16 +93,47 @@ function checkAnswer(e) {
 
 function showResult() {
     console.log(this);
+    let allAnswers = document.getElementsByClassName("answer");
+    let gameQuestion = document.getElementById("question");
     if (checkAnswer(this)) {
         this.classList.add("correct");
+        gameQuestion.innerHTML = "Yes, this is the correct answer.";
+        scoreUpdate("correct");
     } else {
 
         let correct = document.getElementById(this.getAttribute("data-ans"));
         console.log(correct);
         this.classList.add("wrong");
         correct.classList.add("correct");
+        gameQuestion.innerHTML = "No, you got it wrong. \n The correct answer is -";
+        scoreUpdate("wrong");
     }
+    for (let item of allAnswers) {
+        item.removeEventListener("click", showResult);
+    }
+
+    console.log("new one");
+
+    setTimeout(checkCount, 3000);
+
+
 }
+function checkCount() {
+    let gameQustionNum = document.getElementById("question-num");
+    // debugger;
+    parseInt(gameQustionNum.innerHTML) !== 3 ? loadQuiz() : finish();
+}
+
+function finish() {
+    console.log("finish");
+    gameSet(true);
+    let gameQuestion = document.getElementById("question");
+    let gameScoreCorrect = document.getElementById("correct-answers");
+    let gameScoreWrong = document.getElementById("wrong-answers");
+    gameQuestion.innerHTML = `You got ${gameScoreCorrect.innerHTML} correct and ${gameScoreWrong.innerHTML} wrong answers`;
+
+}
+
 
 
 
