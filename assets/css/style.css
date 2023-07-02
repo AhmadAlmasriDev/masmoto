@@ -24,14 +24,16 @@ Eerie black: #191919
 
 
 body {
-    /* position: relative; */
-    /* z-index: 0; */
+    position: relative;
+    z-index: 0;
     font-family: Rajdhani, sans-serif;
     background-color: #ffffff;
     color: #ffffff;
-    /* top: 0; */
-    /* bottom: 0; */
-    /* height: 80vh; */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
 }
 
 
@@ -135,6 +137,10 @@ a {
     opacity: .9;
 }
 
+/* .head-split div {
+    opacity: 1;
+} */
+
 .left-split,
 .main-left-split {
 
@@ -173,14 +179,15 @@ a {
 
 .main-split {
     position: absolute;
-    top: 0;
+    top: 170px;
     left: 0;
     right: 0;
-
+    bottom: 0;
     z-index: 1;
 
-    margin-top: 170px;
-    height: 80vh;
+
+
+    height: 100%;
 }
 
 /* Dots----------------------------- */
@@ -347,10 +354,10 @@ a {
 /* ---------------------------Home------------------------------------------- */
 #main-sec {
     /* visibility: hidden; */
-    margin-top: 220px;
+    /* margin-top: 220px; */
     /* color: #000000; */
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 220px;
     right: 0;
     left: 0;
     z-index: 3;
@@ -467,7 +474,8 @@ a {
     /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #191919;
-    position: absolute;
+    position: relative;
+
     top: 200px;
     right: 0;
     left: 0;
@@ -610,7 +618,7 @@ a {
     /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
-    position: absolute;
+    position: relative;
     top: 200px;
     right: 0;
     left: 0;
@@ -828,7 +836,7 @@ a {
     /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
-    position: absolute;
+    position: relative;
     top: 200px;
     right: 0;
     left: 0;
@@ -1079,7 +1087,7 @@ a {
     /* visibility: hidden; */
     /* margin-top: 200px; */
     color: #ffffff;
-    position: absolute;
+    position: relative;
     top: 200px;
     right: 0;
     left: 0;
@@ -1205,8 +1213,6 @@ footer {
 
 /* ---------------------------RESPONSIVENESS--------------------------------- */
 
-/* ---------------------------Home Page-------------------------------------- */
-
 /* -------------------------------1200px-------------------------------------- */
 
 @media screen and (max-width: 1200px) {
@@ -1237,6 +1243,43 @@ footer {
     .footer-container ul {
         padding: 0 32px;
     }
+
+    /* ---------------------------Home Page-------------------------------------- */
+
+    .cards-container {
+
+        margin-top: 32px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 18px;
+    }
+
+    .utilities-header h2 {
+        font-size: 40px;
+    }
+
+    .utilities-info h3 {
+        font-size: 30px;
+    }
+
+    .utilities-container {
+        padding: 0;
+    }
+
+    #quiz h3,
+    #links h3 {
+        color: #191919;
+        text-shadow: none;
+        /* text-shadow: 1px 1px 10px #1919194d; */
+    }
+
+    #specs h3,
+    #paint h3 {
+        color: #F5F5F5;
+        text-shadow: 1px 1px 10px #1919194d;
+    }
+
 }
 
 
@@ -1324,6 +1367,35 @@ footer {
 
     .footer-link {
         width: 30%;
+    }
+
+
+    /* ---------------------------Home Page-------------------------------------- */
+    .info-block {
+        flex-direction: column;
+
+
+    }
+
+    .utilities-header {
+        text-align: center;
+        padding: 0;
+    }
+
+    .utilities-info {
+        text-align: center;
+        padding: 0;
+        min-height: 64px;
+        color: #F5F5F5;
+        text-shadow: 1px 1px 10px #1919194d;
+    }
+
+    .utilities-header h2 {
+        margin: 0;
+    }
+
+    .utility-card {
+        padding: 0 0 16px 0;
     }
 }
 
