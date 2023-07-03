@@ -130,6 +130,7 @@ function injectYear(list) {
 function injectSpecs(specs) {
 
     let image = document.getElementById("moto-image");
+    let imagePlaceHolder = document.getElementById("image-place-holder");
 
     let category = document.getElementById("category");
     let power = document.getElementById("power");
@@ -142,6 +143,7 @@ function injectSpecs(specs) {
     // debugger;
     if (!specs) {
         image.classList.add("hidden");
+        imagePlaceHolder.classList.remove("display-non");
         image.src = "";
         category.innerHTML = "";
         power.innerHTML = "";
@@ -153,6 +155,7 @@ function injectSpecs(specs) {
         weight.innerHTML = "";
     } else {
         image.classList.remove("hidden");
+        imagePlaceHolder.classList.add("display-non");
         image.src = `assets/images/${specs.image}`;
         category.innerHTML = specs.type ? specs.type.split(" ")[0] : "-";
         power.innerHTML = specs.power ? `${specs.power.split(" ")[0]} HP` : "-";
