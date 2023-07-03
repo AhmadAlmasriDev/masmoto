@@ -869,6 +869,7 @@ a {
 .paint-container>div {
     width: 100%;
     padding: 0;
+    max-width: 1150px;
 }
 
 .Paint-image-block {
@@ -1315,6 +1316,28 @@ footer {
     .answers {
         flex-direction: column;
     }
+
+    /* ---------------------------Paint Page-------------------------------------- */
+
+    .paint-container>div {
+        flex-direction: column;
+    }
+
+    .Paint-image-block {
+        width: 100%;
+    }
+
+    .paint-controls-conatainer {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 550px;
+    }
+
+    #controls {
+
+        flex-direction: row;
+        column-gap: 64px;
+    }
 }
 
 /* -------------------------------950px-------------------------------------- */
@@ -1547,6 +1570,53 @@ footer {
     .correct-container,
     .wrong-container {
         padding-left: 0;
+    }
+
+
+    /* -------------------------------Paint Sec---------------------------------- */
+
+    #controls {
+
+        flex-direction: column;
+    }
+
+    .paint-controls-conatainer {
+        width: 100%;
+    }
+
+    .paint-main-container {
+        padding: 0 32px;
+    }
+
+    .s1-image {
+        border: none;
+        border-bottom: solid #191919 2px;
+    }
+
+    .f1-image,
+    .r1-image {
+        border: none;
+        border-top: solid #191919 2px;
+    }
+
+    .r1-image {
+        border: none;
+        border-left: solid #191919 2px;
+    }
+
+    .f1-image {
+        border: none;
+        border-right: solid #191919 2px;
+    }
+
+    .Paint-image-block {
+        flex-direction: column;
+        border: solid 4px #191919;
+    }
+
+    .r1-f1-image-container {
+        flex-direction: row;
+        width: 100%;
     }
 
 }
