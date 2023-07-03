@@ -21,12 +21,12 @@ function gameSet(res) {
     let gameStartButton = document.getElementById("start");
     let answersBlock = document.getElementById("answers");
     if (res) {
-        gameStartButton.classList.remove("hidden");
-        answersBlock.classList.add("hidden");
+        gameStartButton.classList.remove("display-non");
+        answersBlock.classList.add("display-non");
         gameStartButton.addEventListener("click", gameStart, options);
     } else {
-        gameStartButton.classList.add("hidden");
-        answersBlock.classList.remove("hidden");
+        gameStartButton.classList.add("display-non");
+        answersBlock.classList.remove("display-non");
     }
 }
 

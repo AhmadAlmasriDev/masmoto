@@ -699,6 +699,7 @@ a {
 
 .quiz-body {
     flex-direction: column;
+    justify-content: flex-start;
     min-height: 500px;
     padding: 0;
 }
@@ -724,7 +725,7 @@ a {
     width: 90%;
     text-align: center;
 
-    margin-top: 32px;
+    margin-top: 64px;
     min-height: 200px;
 
     background-color: #F5F5F5e6;
@@ -750,6 +751,7 @@ a {
     position: absolute;
     text-align: center;
     padding: 38px 0px;
+    margin-top: 128px;
     /* width: 100%; */
 }
 
@@ -1308,8 +1310,12 @@ footer {
         width: 30%;
     }
 
-}
+    /* ---------------------------Quiz Page-------------------------------------- */
 
+    .answers {
+        flex-direction: column;
+    }
+}
 
 /* -------------------------------950px-------------------------------------- */
 
@@ -1369,14 +1375,7 @@ footer {
         background-color: #F5F5F5;
     }
 
-    /* 
-    .main-logo-color-1 {
-        fill: #191919;
-    }
 
-    .main-logo-color-2 {
-        fill: #ed1d24;
-    } */
 
 
 
@@ -1425,6 +1424,12 @@ footer {
     .utility-card {
         padding: 0 0 16px 0;
     }
+
+    /* -------------------------------Quiz--------------------------------------- */
+    .quiz-main-container {
+        padding: 0 32px;
+    }
+
 }
 
 /* -------------------------------768px-------------------------------------- */
@@ -1450,7 +1455,13 @@ footer {
 
     /* ---------------------------Specs Page------------------------------------- */
     #specs-sec>div {
-        padding: 0 32px;
+        /* padding: 0 32px; */
+    }
+
+
+
+    .answer {
+        font-size: 20px;
     }
 
     .specs-header {
@@ -1498,6 +1509,46 @@ footer {
         font-size: 150%;
     }
 
+    /* -------------------------------Quiz Sec------------------------------- */
+    #question {
+        font-size: 35px;
+    }
+
+    .quiz-header h3 {
+        font-size: 28px;
+    }
+
+    .score-container,
+    .question-num-container {
+        padding: 5px 0;
+        margin: 0;
+        padding-left: 16px;
+        width: 50%;
+
+    }
+
+    .score-container {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .quiz-header {
+        flex-direction: column;
+
+    }
+
+    .start-button {
+        font-size: 35px;
+
+
+        padding: 16px 16px;
+    }
+
+    .correct-container,
+    .wrong-container {
+        padding-left: 0;
+    }
+
 }
 
 /* -------------------------------480px-------------------------------------- */
@@ -1510,11 +1561,7 @@ footer {
         align-items: center;
     }
 
-    /* .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
+
 
     .left-nav-container,
     .right-nav-container {
@@ -1613,4 +1660,34 @@ footer {
     .spec-value {
         font-size: 130%;
     }
+
+    /* ---------------------------Quiz Page------------------------------------- */
+    #question {
+        font-size: 25px;
+        line-height: 100%;
+        padding: 10px;
+    }
+
+    .start-button {
+        font-size: 25px;
+
+
+        padding: 16px 16px;
+    }
+
+    .score-container {
+        flex-direction: column;
+        min-width: 0;
+
+    }
+
+    .quiz-header h3 {
+        font-size: 25px;
+    }
+
+    .question-num-container {
+        width: 100%;
+        min-width: 0;
+    }
+
 }
