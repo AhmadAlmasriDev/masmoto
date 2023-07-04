@@ -260,6 +260,7 @@ a {
     margin-left: 32px;
 }
 
+
 .main-logo-color-1 {
     fill: #ed1d24;
 }
@@ -1095,7 +1096,7 @@ a {
 #links-sec {
     /* visibility: hidden; */
     /* margin-top: 200px; */
-    color: #ffffff;
+    color: #F5F5F5;
     position: relative;
     top: 200px;
     right: 0;
@@ -1640,11 +1641,15 @@ footer {
     /* -------------------------------Links Sec------------------------------ */
     .links-main-container {
         flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 32px;
     }
 
     #link-info {
+        padding: 0;
         margin-right: 0;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
+        min-height: 100px;
     }
 
     .links-container {
@@ -1654,6 +1659,10 @@ footer {
     .links {
 
         margin: 16px.0;
+    }
+
+    .links:hover {
+        transform: scale(1.1);
     }
 
     /* -------------------------------480px-------------------------------------- */
