@@ -1216,11 +1216,6 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* Header--------------------- */
-    .nav-menu a {
-        /* padding: 12px 12px; */
-        /* font-size: 26px; */
-    }
-
     .nav-menu li {
         padding: 0 6px;
     }
@@ -1234,12 +1229,6 @@ footer {
     }
 
     /* ---------------------------Specs Page------------------------------------- */
-    #specs-sec>div {
-        /* padding: 0 32px; */
-    }
-
-
-
     .answer {
         font-size: 20px;
     }
@@ -1268,17 +1257,11 @@ footer {
     }
 
     .specs-image-container {
-
         width: 90%;
         height: unset;
         min-width: 0;
         min-height: 0;
-
-
     }
-
-
-
 
     .info-container>h2 {
         font-size: 40px;
@@ -1304,7 +1287,6 @@ footer {
         margin: 0;
         padding-left: 16px;
         width: 50%;
-
     }
 
     .score-container {
@@ -1314,13 +1296,10 @@ footer {
 
     .quiz-header {
         flex-direction: column;
-
     }
 
     .start-button {
         font-size: 35px;
-
-
         padding: 16px 16px;
     }
 
@@ -1334,7 +1313,6 @@ footer {
 
     #controls {
         column-gap: 32px;
-        /* flex-direction: column; */
     }
 
     .picker-container {
@@ -1345,7 +1323,6 @@ footer {
         font-size: 25px;
         text-align: center;
     }
-
 
     #controls label {
         font-size: 25px;
@@ -1366,19 +1343,11 @@ footer {
     }
 
     .s1-image {
-        /* border: none; */
         border-bottom: solid #191919 2px;
     }
 
-
     .r1-image {
-        /* border: none; */
         border-left: solid #191919 2px;
-    }
-
-    .f1-image {
-        /* border: none; */
-
     }
 
     .Paint-image-block {
@@ -1411,7 +1380,6 @@ footer {
     }
 
     .links {
-
         margin: 16px.0;
     }
 
