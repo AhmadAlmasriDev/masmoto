@@ -1398,8 +1398,6 @@ footer {
         align-items: center;
     }
 
-
-
     .left-nav-container,
     .right-nav-container {
         width: 90%;
@@ -1424,8 +1422,6 @@ footer {
         flex-direction: column;
     }
 
-
-
     .nav-menu {
         font-size: 200%;
         line-height: 100%;
@@ -1438,19 +1434,13 @@ footer {
     .nav-menu a {
         padding: 2px 6px;
         font-size: 24px;
-
     }
-
-
-
 
     /* Footer--------------------- */
     .footer-container ul {
         flex-wrap: wrap;
-
         column-gap: 64px;
         justify-content: center;
-        /* gap: 0; */
     }
 
     .footer-link {
@@ -1459,10 +1449,8 @@ footer {
 
     /* ---------------------------Home Page-------------------------------------- */
     .cards-container {
-
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        /* column-gap: 18px; */
     }
 
     #utility-info {
@@ -1471,7 +1459,6 @@ footer {
     }
 
     .utilities-info {
-
         min-height: 0;
     }
 
@@ -1507,15 +1494,12 @@ footer {
 
     .start-button {
         font-size: 25px;
-
-
         padding: 16px 16px;
     }
 
     .score-container {
         flex-direction: column;
         min-width: 0;
-
     }
 
     .quiz-header h3 {
@@ -1528,9 +1512,7 @@ footer {
     }
 
     /* ---------------------------Paint Page--------------------------------- */
-
     #controls {
-
         flex-direction: column;
     }
 }
