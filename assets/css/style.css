@@ -861,6 +861,7 @@ a {
 
 .paint-main-container {
     width: 100%;
+    padding-top: 32px;
 }
 
 .paint-container {
@@ -1327,7 +1328,7 @@ footer {
     /* ---------------------------Paint Page-------------------------------------- */
 
     .paint-container>div {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .Paint-image-block {
@@ -1335,7 +1336,7 @@ footer {
     }
 
     .paint-controls-conatainer {
-        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: 0;
         width: 550px;
     }
@@ -1599,8 +1600,22 @@ footer {
     /* -------------------------------Paint Sec---------------------------------- */
 
     #controls {
+        column-gap: 32px;
+        /* flex-direction: column; */
+    }
 
-        flex-direction: column;
+    .picker-container {
+        column-gap: 16px;
+    }
+
+    .paint-controls-conatainer h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    #controls label {
+        font-size: 25px;
     }
 
     .paint-controls-conatainer {
@@ -1670,144 +1685,151 @@ footer {
     .links:hover {
         transform: scale(1.1);
     }
+}
 
-    /* -------------------------------480px-------------------------------------- */
-    @media screen and (max-width: 480px) {
+/* -------------------------------480px-------------------------------------- */
+@media screen and (max-width: 480px) {
 
-        /* Header--------------------- */
-        .nav-main-container {
-            width: 50%;
-            flex-direction: column;
-            align-items: center;
-        }
-
-
-
-        .left-nav-container,
-        .right-nav-container {
-            width: 90%;
-        }
-
-        .header-container>div {
-            flex-direction: row;
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-        }
-
-        .logo-container {
-            width: 50%;
-            padding-left: 18px;
-        }
-
-        #left-nav-menu,
-        #right-nav-menu {
-            justify-content: left;
-            align-items: flex-start;
-            flex-direction: column;
-        }
+    /* Header--------------------- */
+    .nav-main-container {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
 
-        .nav-menu {
-            font-size: 200%;
-            line-height: 100%;
-        }
+    .left-nav-container,
+    .right-nav-container {
+        width: 90%;
+    }
 
-        .nav-menu li {
-            padding: 1px 12px;
-        }
+    .header-container>div {
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
 
-        .nav-menu a {
-            padding: 2px 6px;
-            font-size: 24px;
+    .logo-container {
+        width: 50%;
+        padding-left: 18px;
+    }
 
-        }
-
-
-
-
-        /* Footer--------------------- */
-        .footer-container ul {
-            flex-wrap: wrap;
-
-            column-gap: 64px;
-            justify-content: center;
-            /* gap: 0; */
-        }
-
-        .footer-link {
-            width: 35%;
-        }
-
-        /* ---------------------------Home Page-------------------------------------- */
-        .cards-container {
-
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            /* column-gap: 18px; */
-        }
-
-        #utility-info {
-            position: absolute;
-            visibility: hidden;
-        }
-
-        .utilities-info {
-
-            min-height: 0;
-        }
-
-        #main-sec {
-            top: 170px;
-        }
-
-        /* ---------------------------Specs Page------------------------------------- */
-        .specs-header select {
-            width: 90%;
-        }
-
-        .spec-name,
-        .spec-value {
-            min-width: 100px;
-        }
-
-        .info-container>h2 {
-            font-size: 35px;
-        }
-
-        .spec-name,
-        .spec-value {
-            font-size: 130%;
-        }
-
-        /* ---------------------------Quiz Page------------------------------------- */
-        #question {
-            font-size: 25px;
-            line-height: 100%;
-            padding: 10px;
-        }
-
-        .start-button {
-            font-size: 25px;
+    #left-nav-menu,
+    #right-nav-menu {
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
 
-            padding: 16px 16px;
-        }
 
-        .score-container {
-            flex-direction: column;
-            min-width: 0;
+    .nav-menu {
+        font-size: 200%;
+        line-height: 100%;
+    }
 
-        }
+    .nav-menu li {
+        padding: 1px 12px;
+    }
 
-        .quiz-header h3 {
-            font-size: 25px;
-        }
-
-        .question-num-container {
-            width: 100%;
-            min-width: 0;
-        }
+    .nav-menu a {
+        padding: 2px 6px;
+        font-size: 24px;
 
     }
+
+
+
+
+    /* Footer--------------------- */
+    .footer-container ul {
+        flex-wrap: wrap;
+
+        column-gap: 64px;
+        justify-content: center;
+        /* gap: 0; */
+    }
+
+    .footer-link {
+        width: 35%;
+    }
+
+    /* ---------------------------Home Page-------------------------------------- */
+    .cards-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* column-gap: 18px; */
+    }
+
+    #utility-info {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .utilities-info {
+
+        min-height: 0;
+    }
+
+    #main-sec {
+        top: 170px;
+    }
+
+    /* ---------------------------Specs Page------------------------------------- */
+    .specs-header select {
+        width: 90%;
+    }
+
+    .spec-name,
+    .spec-value {
+        min-width: 100px;
+    }
+
+    .info-container>h2 {
+        font-size: 35px;
+    }
+
+    .spec-name,
+    .spec-value {
+        font-size: 130%;
+    }
+
+    /* ---------------------------Quiz Page------------------------------------- */
+    #question {
+        font-size: 25px;
+        line-height: 100%;
+        padding: 10px;
+    }
+
+    .start-button {
+        font-size: 25px;
+
+
+        padding: 16px 16px;
+    }
+
+    .score-container {
+        flex-direction: column;
+        min-width: 0;
+
+    }
+
+    .quiz-header h3 {
+        font-size: 25px;
+    }
+
+    .question-num-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* ---------------------------Paint Page--------------------------------- */
+
+    #controls {
+
+        flex-direction: column;
+    }
+}
