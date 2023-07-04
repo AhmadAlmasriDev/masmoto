@@ -1453,6 +1453,22 @@ footer {
         padding: 0 32px;
     }
 
+    /* -------------------------------Links Sec------------------------------ */
+    #link-info {
+        font-size: 28px;
+    }
+
+    .links a {
+        color: #F5F5F5;
+        font-size: 35px;
+        text-shadow: 1px 1px 10px #1919194d;
+    }
+
+    .links a:hover {
+        background-color: #F5F5F5;
+        color: #191919;
+    }
+
 }
 
 /* -------------------------------768px-------------------------------------- */
@@ -1621,145 +1637,162 @@ footer {
         background-color: #ffffff;
     }
 
-}
-
-/* -------------------------------480px-------------------------------------- */
-@media screen and (max-width: 480px) {
-
-    /* Header--------------------- */
-    .nav-main-container {
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .left-nav-container,
-    .right-nav-container {
-        width: 90%;
-    }
-
-    .header-container>div {
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-    }
-
-    .logo-container {
-        width: 50%;
-        padding-left: 18px;
-    }
-
-    #left-nav-menu,
-    #right-nav-menu {
-        justify-content: left;
-        align-items: flex-start;
+    /* -------------------------------Links Sec------------------------------ */
+    .links-main-container {
         flex-direction: column;
     }
 
-
-
-    .nav-menu {
-        font-size: 200%;
-        line-height: 100%;
+    #link-info {
+        margin-right: 0;
+        margin-bottom: 32px;
     }
 
-    .nav-menu li {
-        padding: 1px 12px;
+    .links-container {
+        margin-left: 0;
     }
 
-    .nav-menu a {
-        padding: 2px 6px;
-        font-size: 24px;
+    .links {
 
+        margin: 16px.0;
     }
 
+    /* -------------------------------480px-------------------------------------- */
+    @media screen and (max-width: 480px) {
+
+        /* Header--------------------- */
+        .nav-main-container {
+            width: 50%;
+            flex-direction: column;
+            align-items: center;
+        }
 
 
 
-    /* Footer--------------------- */
-    .footer-container ul {
-        flex-wrap: wrap;
+        .left-nav-container,
+        .right-nav-container {
+            width: 90%;
+        }
 
-        column-gap: 64px;
-        justify-content: center;
-        /* gap: 0; */
+        .header-container>div {
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+        }
+
+        .logo-container {
+            width: 50%;
+            padding-left: 18px;
+        }
+
+        #left-nav-menu,
+        #right-nav-menu {
+            justify-content: left;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+
+
+        .nav-menu {
+            font-size: 200%;
+            line-height: 100%;
+        }
+
+        .nav-menu li {
+            padding: 1px 12px;
+        }
+
+        .nav-menu a {
+            padding: 2px 6px;
+            font-size: 24px;
+
+        }
+
+
+
+
+        /* Footer--------------------- */
+        .footer-container ul {
+            flex-wrap: wrap;
+
+            column-gap: 64px;
+            justify-content: center;
+            /* gap: 0; */
+        }
+
+        .footer-link {
+            width: 35%;
+        }
+
+        /* ---------------------------Home Page-------------------------------------- */
+        .cards-container {
+
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* column-gap: 18px; */
+        }
+
+        #utility-info {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .utilities-info {
+
+            min-height: 0;
+        }
+
+        #main-sec {
+            top: 170px;
+        }
+
+        /* ---------------------------Specs Page------------------------------------- */
+        .specs-header select {
+            width: 90%;
+        }
+
+        .spec-name,
+        .spec-value {
+            min-width: 100px;
+        }
+
+        .info-container>h2 {
+            font-size: 35px;
+        }
+
+        .spec-name,
+        .spec-value {
+            font-size: 130%;
+        }
+
+        /* ---------------------------Quiz Page------------------------------------- */
+        #question {
+            font-size: 25px;
+            line-height: 100%;
+            padding: 10px;
+        }
+
+        .start-button {
+            font-size: 25px;
+
+
+            padding: 16px 16px;
+        }
+
+        .score-container {
+            flex-direction: column;
+            min-width: 0;
+
+        }
+
+        .quiz-header h3 {
+            font-size: 25px;
+        }
+
+        .question-num-container {
+            width: 100%;
+            min-width: 0;
+        }
+
     }
-
-    .footer-link {
-        width: 35%;
-    }
-
-    /* ---------------------------Home Page-------------------------------------- */
-    .cards-container {
-
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        /* column-gap: 18px; */
-    }
-
-    #utility-info {
-        position: absolute;
-        visibility: hidden;
-    }
-
-    .utilities-info {
-
-        min-height: 0;
-    }
-
-    #main-sec {
-        top: 170px;
-    }
-
-    /* ---------------------------Specs Page------------------------------------- */
-    .specs-header select {
-        width: 90%;
-    }
-
-    .spec-name,
-    .spec-value {
-        min-width: 100px;
-    }
-
-    .info-container>h2 {
-        font-size: 35px;
-    }
-
-    .spec-name,
-    .spec-value {
-        font-size: 130%;
-    }
-
-    /* ---------------------------Quiz Page------------------------------------- */
-    #question {
-        font-size: 25px;
-        line-height: 100%;
-        padding: 10px;
-    }
-
-    .start-button {
-        font-size: 25px;
-
-
-        padding: 16px 16px;
-    }
-
-    .score-container {
-        flex-direction: column;
-        min-width: 0;
-
-    }
-
-    .quiz-header h3 {
-        font-size: 25px;
-    }
-
-    .question-num-container {
-        width: 100%;
-        min-width: 0;
-    }
-
-}
