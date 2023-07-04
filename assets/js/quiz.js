@@ -10,7 +10,6 @@ function initial() {
     gameSet(true);
 }
 
-
 /**
  * Set and reset the game (true shows start playing and false shows the questions)
  */
@@ -41,7 +40,6 @@ function gameStart() {
 }
 
 /**
- * 
  * Updates or resets the score (correct, wrong , reset)
  */
 function scoreUpdate(res) {
