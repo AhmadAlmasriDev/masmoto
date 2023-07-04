@@ -1104,7 +1104,6 @@ footer {
 
     .logo-container {
         width: 150px;
-
     }
 
     .nav-main-container {
@@ -1113,7 +1112,6 @@ footer {
 
     .left-nav-container {
         width: 50%;
-
     }
 
     .right-nav-container {
@@ -1146,12 +1144,7 @@ footer {
         background-color: #F5F5F5;
     }
 
-
-
-
-
     /* Main Split--------------------- */
-
     .main-right-split,
     .main-left-split {
         background-color: #ed1d24;
@@ -1160,19 +1153,15 @@ footer {
     /* Footer--------------------- */
     .footer-container ul {
         flex-wrap: wrap;
-        /* gap: 0; */
     }
 
     .footer-link {
         width: 30%;
     }
 
-
     /* ---------------------------Home Page-------------------------------------- */
     .info-block {
         flex-direction: column;
-
-
     }
 
     .utilities-header {
@@ -1216,7 +1205,6 @@ footer {
         background-color: #F5F5F5;
         color: #191919;
     }
-
 }
 
 /* -------------------------------768px-------------------------------------- */
