@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", createListeners);
 function createListeners() {
     let buttons = document.getElementsByClassName("links");
     for (let button of buttons) {
-        // console.log(button.id);
         button.addEventListener("mouseenter", updateInfo);
         button.addEventListener("mouseleave", resetInfo);
     }
@@ -15,8 +14,6 @@ function createListeners() {
  */
 function updateInfo(event) {
     let infoBlock = document.getElementById("link-info");
-    // console.log(this.children.item(0).ariaLabel);
-    // infoBlock.innerHTML = this.firstChild.ariaLabel;
     infoBlock.innerHTML = this.children.item(0).ariaLabel;
 }
 /**
