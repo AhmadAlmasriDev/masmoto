@@ -1588,25 +1588,26 @@ footer {
         padding: 0 32px;
     }
 
-    .s1-image {
-        border: none;
-        border-bottom: solid #191919 2px;
-    }
-
+    .s1-image,
     .f1-image,
     .r1-image {
         border: none;
-        border-top: solid #191919 2px;
     }
 
+    .s1-image {
+        /* border: none; */
+        border-bottom: solid #191919 2px;
+    }
+
+
     .r1-image {
-        border: none;
+        /* border: none; */
         border-left: solid #191919 2px;
     }
 
     .f1-image {
-        border: none;
-        border-right: solid #191919 2px;
+        /* border: none; */
+
     }
 
     .Paint-image-block {
@@ -1617,6 +1618,7 @@ footer {
     .r1-f1-image-container {
         flex-direction: row;
         width: 100%;
+        background-color: #ffffff;
     }
 
 }
