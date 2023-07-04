@@ -982,7 +982,6 @@ footer {
 /* ---------------------------RESPONSIVENESS--------------------------------- */
 
 /* -------------------------------1200px-------------------------------------- */
-
 @media screen and (max-width: 1200px) {
 
     /* Header--------------------- */
@@ -992,7 +991,6 @@ footer {
 
     .nav-menu a {
         padding: 6px 12px;
-
     }
 
     .logo-container {
@@ -1013,11 +1011,8 @@ footer {
     }
 
     /* ---------------------------Home Page-------------------------------------- */
-
     .cards-container {
-
         margin-top: 32px;
-
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 18px;
@@ -1039,7 +1034,6 @@ footer {
     #links h3 {
         color: #191919;
         text-shadow: none;
-        /* text-shadow: 1px 1px 10px #1919194d; */
     }
 
     #specs h3,
@@ -1049,7 +1043,6 @@ footer {
     }
 
     /* ---------------------------Specs Page------------------------------------- */
-
     .specs-main-info-container {
         flex-direction: column;
         row-gap: 16px;
@@ -1071,13 +1064,11 @@ footer {
     }
 
     /* ---------------------------Quiz Page-------------------------------------- */
-
     .answers {
         flex-direction: column;
     }
 
     /* ---------------------------Paint Page-------------------------------------- */
-
     .paint-container>div {
         flex-direction: column-reverse;
     }
@@ -1093,14 +1084,12 @@ footer {
     }
 
     #controls {
-
         flex-direction: row;
         column-gap: 64px;
     }
 }
 
 /* -------------------------------950px-------------------------------------- */
-
 @media screen and (max-width: 950px) {
 
     /* Header--------------------- */
