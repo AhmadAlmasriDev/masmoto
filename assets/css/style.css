@@ -187,12 +187,8 @@ a {
 
 /* ---------------------------Header----------------------------------------- */
 #header {
-    /* position: absolute; */
-    /* z-index: 1; */
     top: 0;
     width: 100vw;
-
-
 }
 
 .header-container {
@@ -200,13 +196,10 @@ a {
     z-index: 3;
     top: 0;
     width: 100%;
-    /* max-width: 1400px; */
 }
 
 .header-container>div {
-    /* padding: 32px 32px; */
     padding: 32px 0;
-
 }
 
 /* Logo----------------------------- */
@@ -214,7 +207,6 @@ a {
     width: 150px;
     margin-left: 32px;
 }
-
 
 .main-logo-color-1 {
     fill: #ed1d24;
@@ -234,31 +226,22 @@ a {
 }
 
 .nav-menu {
-
     font-size: 200%;
     font-weight: 700;
     padding: 0;
-
 }
 
 .right-nav-container {
     width: 100%;
-    /* max-width: 500PX; */
 }
 
 #right-nav-menu {
-
-
     justify-content: left;
 }
 
 .left-nav-container {
     width: 70%;
-    /* max-width: 500px; */
-
 }
-
-
 
 #left-nav-menu {
     align-content: space-between;
@@ -267,12 +250,7 @@ a {
 
 .nav-menu li {
     padding: 0 32px;
-
-
 }
-
-
-
 
 .nav-menu a {
     padding: 12px 24px;
@@ -303,8 +281,6 @@ a {
     color: #ffffff;
     text-shadow: 1px 1px 10px #1919194d;
 }
-
-
 
 /* -------------------------------------------------------------------------- */
 
