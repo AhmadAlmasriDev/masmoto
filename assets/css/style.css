@@ -163,7 +163,7 @@ a {
     background-repeat: repeat;
 }
 
-/* Backgroud Logo---------------------------- */
+/* Backgroud Logo------------------- */
 .back-logo-container {
     position: absolute;
     z-index: 0;
@@ -344,7 +344,7 @@ a {
     text-shadow: 1px 1px 10px #1919194d;
 }
 
-/* Utilities------------------------- */
+/* Utilities------------------------ */
 .cards-container {
     width: 100%;
     margin: 64px 0 32px 0;
@@ -732,7 +732,7 @@ a {
     object-fit: cover;
 }
 
-/* borders-------------- */
+/* borders-------------------------- */
 .r1-image,
 .f1-image {
     width: 100%;
@@ -775,7 +775,7 @@ a {
     mix-blend-mode: hard-light;
 }
 
-/* body color transparency always 80%------------ */
+/* Transparency always 80%---------- */
 .body-color {
     padding-top: 3px;
     position: absolute;
@@ -790,8 +790,8 @@ a {
     z-index: 4;
 }
 
-/* Position Correction------------- */
-/* S1------------------- */
+/* Position Correction-------------- */
+/* S1------------------------------- */
 .s1-tank.body {
     padding-left: 2px;
 }
@@ -809,12 +809,12 @@ a {
     padding: 7px 0 0 10px;
 }
 
-/* F1------------------- */
+/* F1------------------------------- */
 .f1-guard.body {
     padding-top: 4px;
 }
 
-/* dials and controls------------ */
+/* dials and controls--------------- */
 .paint-controls-conatainer {
     margin-left: 30px;
     padding: 24px;
@@ -981,10 +981,10 @@ footer {
 
 /* ---------------------------RESPONSIVENESS--------------------------------- */
 
-/* -------------------------------1200px-------------------------------------- */
+/* -------------------------------1200px------------------------------------- */
 @media screen and (max-width: 1200px) {
 
-    /* Header--------------------- */
+    /* Header----------------------- */
     .nav-menu li {
         padding: 6px 12px;
     }
@@ -1001,7 +1001,7 @@ footer {
         width: 86%;
     }
 
-    /* Footer--------------------- */
+    /* Footer----------------------- */
     .footer-link {
         padding: 0;
     }
@@ -1010,7 +1010,7 @@ footer {
         padding: 0 32px;
     }
 
-    /* ---------------------------Home Page-------------------------------------- */
+    /* ---------------------------Home Page---------------------------------- */
     .cards-container {
         margin-top: 32px;
         grid-template-columns: repeat(2, 1fr);
@@ -1042,7 +1042,7 @@ footer {
         text-shadow: 1px 1px 10px #1919194d;
     }
 
-    /* ---------------------------Specs Page------------------------------------- */
+    /* ---------------------------Specs Page--------------------------------- */
     .specs-main-info-container {
         flex-direction: column;
         row-gap: 16px;
@@ -1063,12 +1063,12 @@ footer {
         width: 30%;
     }
 
-    /* ---------------------------Quiz Page-------------------------------------- */
+    /* ---------------------------Quiz Page---------------------------------- */
     .answers {
         flex-direction: column;
     }
 
-    /* ---------------------------Paint Page-------------------------------------- */
+    /* ---------------------------Paint Page--------------------------------- */
     .paint-container>div {
         flex-direction: column-reverse;
     }
@@ -1092,7 +1092,7 @@ footer {
 /* -------------------------------950px-------------------------------------- */
 @media screen and (max-width: 950px) {
 
-    /* Header--------------------- */
+    /* Header----------------------- */
     .header-container>div {
         flex-direction: column;
         padding: 16px;
@@ -1144,13 +1144,13 @@ footer {
         background-color: #F5F5F5;
     }
 
-    /* Main Split--------------------- */
+    /* Main Split------------------- */
     .main-right-split,
     .main-left-split {
         background-color: #ed1d24;
     }
 
-    /* Footer--------------------- */
+    /* Footer----------------------- */
     .footer-container ul {
         flex-wrap: wrap;
     }
@@ -1159,7 +1159,7 @@ footer {
         width: 30%;
     }
 
-    /* ---------------------------Home Page-------------------------------------- */
+    /* ---------------------------Home Page---------------------------------- */
     .info-block {
         flex-direction: column;
     }
@@ -1190,7 +1190,7 @@ footer {
         padding: 0 0 16px 0;
     }
 
-    /* -------------------------------Quiz--------------------------------------- */
+    /* -------------------------------Quiz----------------------------------- */
     .quiz-main-container {
         padding: 0 32px;
     }
@@ -1215,7 +1215,7 @@ footer {
 /* -------------------------------768px-------------------------------------- */
 @media screen and (max-width: 768px) {
 
-    /* Header--------------------- */
+    /* Header----------------------- */
     .nav-menu li {
         padding: 0 6px;
     }
@@ -1228,7 +1228,7 @@ footer {
         padding: 0 32px;
     }
 
-    /* ---------------------------Specs Page------------------------------------- */
+    /* ---------------------------Specs Page--------------------------------- */
     .answer {
         font-size: 20px;
     }
@@ -1309,7 +1309,7 @@ footer {
     }
 
 
-    /* -------------------------------Paint Sec---------------------------------- */
+    /* -------------------------------Paint Sec------------------------------ */
 
     #controls {
         column-gap: 32px;
@@ -1391,7 +1391,7 @@ footer {
 /* -------------------------------480px-------------------------------------- */
 @media screen and (max-width: 480px) {
 
-    /* Header--------------------- */
+    /* Header----------------------- */
     .nav-main-container {
         width: 50%;
         flex-direction: column;
@@ -1436,7 +1436,7 @@ footer {
         font-size: 24px;
     }
 
-    /* Footer--------------------- */
+    /* Footer----------------------- */
     .footer-container ul {
         flex-wrap: wrap;
         column-gap: 64px;
@@ -1447,7 +1447,7 @@ footer {
         width: 35%;
     }
 
-    /* ---------------------------Home Page-------------------------------------- */
+    /* ---------------------------Home Page---------------------------------- */
     .cards-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -1466,7 +1466,7 @@ footer {
         top: 170px;
     }
 
-    /* ---------------------------Specs Page------------------------------------- */
+    /* ---------------------------Specs Page--------------------------------- */
     .specs-header select {
         width: 90%;
     }
@@ -1485,7 +1485,7 @@ footer {
         font-size: 130%;
     }
 
-    /* ---------------------------Quiz Page------------------------------------- */
+    /* ---------------------------Quiz Page---------------------------------- */
     #question {
         font-size: 25px;
         line-height: 100%;
