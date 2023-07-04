@@ -523,7 +523,6 @@ a {
 
 .quiz-header>div {
     width: 100%;
-
 }
 
 .quiz-header h3 {
@@ -537,26 +536,12 @@ a {
     align-self: end;
     padding: 16px 32px;
     justify-self: start;
-
-}
-
-
-#question-num {
-    /* font-size: 32px;
-    margin: 0; */
-
-}
-
-.score-container h3 {
-    /* font-size: 32px;
-    margin: 0 0 0 32px; */
 }
 
 .score-container {
     width: 60%;
     min-width: 340px;
     padding: 16px 0;
-    /* align-self: end; */
 }
 
 .correct-container,
@@ -591,24 +576,19 @@ a {
     padding: 0;
 }
 
-
 .quiz-body {
     margin-top: 32px;
-
     width: 100%;
 }
 
 .question-area {
     width: 90%;
     text-align: center;
-
     margin-top: 64px;
     min-height: 200px;
-
     background-color: #F5F5F5e6;
     border: solid 3px #191919;
     border-radius: 10px;
-
 }
 
 .question-area>div {
@@ -629,12 +609,9 @@ a {
     text-align: center;
     padding: 38px 0px;
     margin-top: 128px;
-    /* width: 100%; */
 }
 
 .start-button {
-
-
     font-size: 40px;
     font-weight: 600;
     text-align: center;
@@ -646,7 +623,6 @@ a {
 }
 
 .start-button:hover {
-
     background-color: #15fd00;
 }
 
@@ -655,8 +631,6 @@ a {
     margin-top: 32px;
     width: 100%;
 }
-
-
 
 .answers {
     padding: 0;
@@ -678,55 +652,40 @@ a {
     background-color: #F5F5F5;
     font-weight: 500;
     font-size: 25px;
-
 }
 
 .answer.correct {
-    /* color: #F5F5F5; */
     background-color: #15fd00;
     box-shadow: inset 2px 2px 6px #19191999;
-
 }
 
 .answer.wrong {
-    /* color: #F5F5F5; */
     background-color: #ff5353;
     box-shadow: inset 2px 2px 6px #19191999;
-
 }
 
 .answer:hover {
     cursor: pointer;
     color: #191919;
     box-shadow: inset 2px 2px 6px #191919e6;
-    /* background-color: #5353ff; */
-
 }
-
-
 
 .answer-container {
     width: 90%;
 }
 
 .answer-container li {
-
-    /* padding: 16px 0; */
     margin-bottom: 24px;
 }
 
-
 /* ---------------------------Paint Shop------------------------------------- */
 #paint-sec {
-    /* visibility: hidden; */
-    /* margin-top: 200px; */
     color: #ffffff;
     position: relative;
     top: 200px;
     right: 0;
     left: 0;
     z-index: 3;
-    /* margin-bottom: 100px; */
 }
 
 .paint-main-container {
@@ -740,8 +699,6 @@ a {
     min-height: 65vh;
     padding: 0;
     align-items: flex-start;
-    /* background-color: #00000080; */
-
 }
 
 .paint-container>div {
@@ -761,14 +718,9 @@ a {
 
 .r1-f1-image-container {
     width: 33.5%;
-    /* height: 100%; */
     padding: 0;
     flex-direction: column;
-    /* align-items: flex-start; */
-
 }
-
-
 
 .paint-image-container {
     width: 100%;
@@ -784,9 +736,7 @@ a {
 .r1-image,
 .f1-image {
     width: 100%;
-    /* height: 100%; */
     border-left: solid #191919 3px;
-
 }
 
 .f1-image {
@@ -811,14 +761,11 @@ a {
 }
 
 .overlay {
-
-    /* visibility: hidden; */
     position: absolute;
     z-index: 7;
     mix-blend-mode: multiply;
     opacity: .5;
 }
-
 
 .stripe-color {
     padding-top: 3px;
@@ -835,13 +782,11 @@ a {
     z-index: 5;
     mix-blend-mode: darken;
     color: #ffffffcc;
-
 }
 
 .paint-background-image {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     z-index: 4;
 }
 
@@ -869,26 +814,6 @@ a {
     padding-top: 4px;
 }
 
-
-/* Stripe Control TEMPO------------------ */
-/* must be hidden on other pages IMPORTANT--------- */
-/* 1------------- */
-.f1-guard.stripe-1,
-.s1-guard.stripe-1,
-.r1-tank.stripe-1 {
-    /* visibility: hidden; */
-}
-
-/* 2------------- */
-.f1-tank.stripe-2,
-.f1-guard.stripe-2,
-.s1-guard.stripe-2,
-.s1-tank.stripe-2,
-.s1-tail.stripe-2,
-.r1-tank.stripe-2 {
-    /* visibility: visible; */
-}
-
 /* dials and controls------------ */
 .paint-controls-conatainer {
     margin-left: 30px;
@@ -898,7 +823,6 @@ a {
     border-radius: 10px;
     width: 20%;
     min-width: 270px;
-    /* height: 100%; */
 }
 
 .paint-controls-conatainer h3 {
@@ -919,9 +843,7 @@ a {
 
 /* radio button style--------------- */
 .stripe-input {
-
     accent-color: #ed1d24;
-
 }
 
 .stripe-input input {
@@ -931,9 +853,7 @@ a {
 }
 
 .stripe-input label {
-
     margin-left: 16px;
-
 }
 
 /* color picker style--------------- */
@@ -941,12 +861,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 5px; */
 }
-
-
-
-
 
 .color-picker {
     -webkit-appearance: none;
