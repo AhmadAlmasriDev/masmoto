@@ -1177,6 +1177,11 @@ footer {
         text-shadow: 1px 1px 10px #1919194d;
     }
 
+    #main-sec .utility-name {
+        color: #F5F5F5;
+        text-shadow: 1px 1px 10px #1919194d;
+    }
+
     .utilities-header h2 {
         margin: 0;
     }
