@@ -402,6 +402,12 @@ a {
 
 }
 
+#utility-info {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
 #links h3,
 #paint h3 {
     color: #191919;
