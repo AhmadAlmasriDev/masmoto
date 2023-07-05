@@ -165,7 +165,7 @@ function getMake(data) {
  * Create a models array from the data file and returns it 
 */
 function getModel(data) {
-    currentMake = document.getElementById("make");
+    let currentMake = document.getElementById("make");
     const models = data.filter(item => item.make == currentMake.value);
     console.log(models);
     const modelsList = [];

@@ -144,10 +144,8 @@ function loadQuiz() {
     (async () => {
         const result = await getData();
         const data = await result.json();
-        dataLength = data.length;
-        questionNumber = Math.floor(Math.random() * (dataLength));
-        currentQuestion = data[questionNumber];
-        injectQuiz(currentQuestion);
+        let questionNumber = Math.floor(Math.random() * (data.length));
+        injectQuiz(data[questionNumber]);
     })();
 }
 
