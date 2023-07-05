@@ -79,7 +79,6 @@ function injectModel(list) {
         let tempListItem = `<option value="${item}">${item}</option>`;
         optionList += tempListItem;
     }
-    console.log(optionList);
     modelList.innerHTML = optionList;
 
     yearList.innerHTML = '<option value="" disabled selected hidden>Select Model</option>';
@@ -97,7 +96,6 @@ function injectYear(list) {
         let tempListItem = `<option value="${item}">${item}</option>`;
         optionList += tempListItem;
     }
-    console.log(optionList);
     yearList.innerHTML = optionList;
     yearList.addEventListener("input", LoadSpecs);
 }
@@ -157,7 +155,6 @@ function getMake(data) {
             makeList.push(item.make.trim());
         }
     }
-    console.log(makeList);
     return makeList.sort();
 }
 
@@ -167,14 +164,12 @@ function getMake(data) {
 function getModel(data) {
     let currentMake = document.getElementById("make");
     const models = data.filter(item => item.make == currentMake.value);
-    console.log(models);
     const modelsList = [];
     for (let item of models) {
         if (!modelsList.includes(item.model.trim())) {
             modelsList.push(item.model.trim());
         }
     }
-    console.log(modelsList);
     return modelsList.sort();
 }
 
@@ -205,7 +200,6 @@ function getSpecs(data) {
     const models = data.filter(item => item.make.trim() == currentMake.value);
     const years = models.filter(item => item.model.trim() == currentmodel.value);
     const specs = years.filter(item => item.year.trim() == currentyear.value);
-    console.log(specs);
     return specs[0];
 }
 
