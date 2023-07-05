@@ -1400,6 +1400,10 @@ footer {
         align-items: center;
     }
 
+    #logo {
+        width: 100%;
+    }
+
     .left-nav-container,
     .right-nav-container {
         width: 90%;
@@ -1408,7 +1412,7 @@ footer {
     .header-container>div {
         flex-direction: row;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         width: 100%;
         padding: 16px 8px;
     }
@@ -1432,11 +1436,12 @@ footer {
 
     .nav-menu li {
         padding: 1px 12px;
+        min-width: 160px;
     }
 
     .nav-menu a {
         padding: 2px 6px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     /* Footer----------------------- */
