@@ -945,6 +945,8 @@ footer {
     position: fixed;
     z-index: 3;
     bottom: 0;
+    right: 0;
+    left: 0;
     height: 14vh;
     min-height: 60px;
     background-color: #f5f5f5;

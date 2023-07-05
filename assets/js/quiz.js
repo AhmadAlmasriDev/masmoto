@@ -2,7 +2,6 @@ const APILINK = "https://mocki.io/v1/33f0ff85-bfa9-4d5b-99f9-1034af1a1a9e";
 
 document.addEventListener("DOMContentLoaded", initial);
 
-
 /**
  * Initializing function 
  */

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", listeners);
+
 /**
  * Creat event listeners for the color control (color picker and radio)
  */
@@ -11,6 +12,7 @@ function listeners() {
     for (let stripeType of stripeTypes)
         stripeType.addEventListener("input", stripeKind);
 }
+
 /**
  * Paint the body
  */
@@ -20,6 +22,7 @@ function paintBody() {
         part.style = `color:${this.value}cc;`;
     }
 }
+
 /**
  * Color the stripe
  */
@@ -33,6 +36,7 @@ function paintStripe() {
         stripe.style = `color:${this.value};`;
     }
 }
+
 /**
  * Stripe type 
  */
