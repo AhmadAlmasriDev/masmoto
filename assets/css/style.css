@@ -1507,6 +1507,10 @@ footer {
         width: 100%;
     }
 
+    .specs-m-mark i {
+        font-size: 900%;
+    }
+
     #specs-sec>div {
         padding: 0 16px;
     }
