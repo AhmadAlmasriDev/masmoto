@@ -1,0 +1,167 @@
+[
+    {
+    "id": "01",
+    "question": "On a wet road how do you make an emergency stop?",
+    "answer": {
+    "a": "Using front and rear brakes.",
+    "b": "Using front brake only.",
+    "c": "Using rear brake only.",
+    "d": "Using the clutch."
+    },
+    "correct": "a"
+    },
+    {
+    "id": "02",
+    "question": "You should use your right-hand indicator when -",
+    "answer": {
+    "a": "You intend to move to the right.",
+    "b": "You intend to slow down.",
+    "c": "You are about to stop.",
+    "d": "You intend to move to the left."
+    },
+    "correct": "a"
+    },
+    {
+    "id": "03",
+    "question": "If you have a crash whilst wearing your helmet you should -",
+    "answer": {
+    "a": "Check that it's not damaged.",
+    "b": "Get it repainted.",
+    "c": "Replace it.",
+    "d": "Sell it."
+    },
+    "correct": "c"
+    },
+    {
+    "id": "04",
+    "question": "In what part of the lane should you ride when being passed by on-coming vehicles?",
+    "answer": {
+    "a": "No special part of your lane.",
+    "b": "As close to the centre line.",
+    "c": "The centre or left of your lane.",
+    "v5": "As close to the sidewalk."
+    },
+    "correct": "c"
+    },
+    {
+    "id": "05",
+    "question": "Wearing a helmet visor or goggles when riding will -",
+    "answer": {
+    "a": "Protect your eyes.",
+    "b": "Make you look awkward.",
+    "c": "Not make much difference.",
+    "d": "B and C"
+    },
+    "correct": "a"
+    },
+    {
+    "id": "06",
+    "question": "At low speeds, if the front tyre goes flat what is the first thing you will notice?",
+    "answer": {
+    "a": "The steering will feel heavy.",
+    "b": "The motorcycle will tend to slide",
+    "c": "The motorcycle will lean heavily",
+    "d": "The motorcycle will gain speed"
+    },
+    "correct": "a"
+    },
+    {
+    "id": "07",
+    "question": "In a turn you should tell a pillion passenger to -",
+    "answer": {
+    "a": "Lean against you",
+    "b": "Lean with you.",
+    "c": "Stay upright.",
+    "d": "Lean to the back."
+    },
+    "correct": "b"
+    },
+    {
+    "id": "08",
+    "question": "If you wear regular spectacles while you ride -",
+    "answer": {
+    "a": "You should also wear a visor.",
+    "b": "You must not ride at night.",
+    "c": "You need no eye protection.",
+    "d": "You can not ride a motorrcycle."
+    },
+    "correct": "a"
+    },
+    {
+    "id": "09",
+    "question": "If you find cracks or loose padding in your helmet you should -",
+    "answer": {
+    "a": "Use duct tape to fix it.",
+    "b": "Have it repaired.",
+    "c": "sell it it.",
+    "d": "Replace it."
+    },
+    "correct": "d"
+    },
+    {
+    "id": "10",
+    "question": "When stopping at trafic lights, you should put which foot on the ground?",
+    "answer": {
+    "a": "right foot",
+    "b": "Left foot",
+    "c": "Both of them",
+    "d": "Does not matter"
+    },
+    "correct": "b"
+    },
+    {
+    "id": "11",
+    "question": "What is the right lever on the handle bar used for?",
+    "answer": {
+    "a": "Apply the rear brake.",
+    "b": "Apply the front clutch.",
+    "c": "Apply the front brake.",
+    "d": "Change the speed."
+    },
+    "correct": "c"
+    },
+    {
+    "id": "12",
+    "question": "The right foot pedal is for -",
+    "answer": {
+    "a": "Applying the rear brake.",
+    "b": "Signaling right.",
+    "c": "Increasing the speed.",
+    "d": "Applying the clutch"
+    },
+    "correct": "a"
+    },
+    {
+    "id": "13",
+    "question": "You should use the left foot pedal for -",
+    "answer": {
+    "a": "Applying the rear brake.",
+    "b": "Open the throttle.",
+    "c": "Change the gear.",
+    "d": "Applying the front brake."
+    },
+    "correct": "c"
+    },
+    {
+    "id": "14",
+    "question": "Counter steering while turning right, you -",
+    "answer": {
+    "a": "Turn the handle bar right.",
+    "b": "Turn the handle bar left.",
+    "c": "Use the throttle to turn.",
+    "d": "Do nothing."
+    },
+    "correct": "b"
+    },
+    {
+    "id": "15",
+    "question": "You bought new tyres. The first ride, you should - ",
+    "answer": {
+    "a": "Try to reach max speed. ",
+    "b": "Break the tyres in.",
+    "c": "Try drifting.",
+    "d": "Ride like always."
+    },
+    "correct": "b"
+    }
+    ]
