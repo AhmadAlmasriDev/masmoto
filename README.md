@@ -4,7 +4,7 @@ The MASMOTO website is designed to be a responsive website allowing visitors to 
 
 ![preview of the site](documentation/preview.jpg)
 
-[View Masmoto on Github Pages](https://ahmadalmasridev.github.io/masmoto/index.html)
+[View MasMoto on Github Pages](https://ahmadalmasridev.github.io/masmoto/index.html)
 
 ---
 
@@ -62,9 +62,9 @@ Key information for the site
 
 - To be able to view the site on a range of device sizes.
 - To be able to navigate through the website with ease.
-- To be able to find information on the website.
+- To be able to test ones knowledge regarding riding motorcycles.
 - To provide the user with relevant information regarding motorcycles.
-- To provide the user with motorcycle painting scheme choices.
+- To provide the user with motorcycle painting scheme suggestions.
 
 **First Time Visitor Goals**
 
@@ -141,7 +141,7 @@ The user can also access these utilities directly from the navigation bar.
 
 - All Pages on the website have:
 
-  - A responsive navigation bar at the top which allows the user to navigate through the website. To the left of the website header is a logo. To the right is the navigation bar with the links to the website pages (Specs,Quiz,Paint shop, and links). To allow a good user experience of the site. When viewing with mobile devices the navigation links change to a vertical list to the right side of the logo. This was implemented to give the website a clean look. And there is also other UI interaction elements like buttons and links.
+  - A responsive navigation bar at the top which allows the user to navigate through the website. To the left of the website header is a logo.to the right is the navigation bar with the links to the website pages (Specs,Quiz,Paint shop, and links). To allow a good user experience of the site. When viewing with mobile devices the navigation links change to a vertical list to the right side of the logo. This was implemented to give the website a clean look. And there is also other UI interaction elements like buttons and links.
 
     <details close>
     <summary>Navigation Bar</summary>
@@ -149,6 +149,7 @@ The user can also access these utilities directly from the navigation bar.
     ![navigation bar](documentation/anim-nav.gif)
 
     </details>
+
 
   - A footer which contains links to the main motorcycle manufacturer. Logos were used to keep the footer clean and because they are widely recognized.
 
@@ -178,6 +179,7 @@ The user can also access these utilities directly from the navigation bar.
 
     </details>
         it provides the user with information on various motorcycles specs. the user choses from dropdown menus, first a manufacturer then a model and last a year. and then the information (the motorcycle picture and specs) appears on screen.
+
 
     <br/>
 
@@ -214,7 +216,7 @@ The user can also access these utilities directly from the navigation bar.
 - The website is designed to be user friendly and all the pages are responsive. The visitor can use it with a variety of screen sizes and resolutions.
   the breaking points used, are from this [article](https://testsigma.com/blog/css-breakpoints/#What_are_common_breakpoints).
 
-  Responsivenes:
+      Responsivenes:
 
   - <details close>
     <summary>1200px Preview</summary>
@@ -245,7 +247,7 @@ The user can also access these utilities directly from the navigation bar.
     </details>
 
   - The home page has utility icons animation and link info appears when hovering.
-    The mechanism is implemented in [index.js](assets/js/index.js) file through reading the aria-label tag of the selected button.
+    The mechanism is implemented in [index.js](../assets/js/index.js) file through reading the aria-label tag of the selected button.
 
     <details close>
     <summary>Utility Icon Hover Effect</summary>
@@ -256,7 +258,7 @@ The user can also access these utilities directly from the navigation bar.
 
   - The Specs page has three dropdown menus that is activated and loaded in sequence. once the user choose an option from the make menu the models are loaded to the model menu and etc...
     At first I planned using an API service with images, and the only one I found was [Motorcycle Specs Database](https://rapidapi.com/makingdatameaningful/api/motorcycle-specs-database/). And I started writing the code for this webpage with the information from this API in my mind, since they have a free subscription with 6 request per minute limitation, which is more than enough. But unfortunately there was a max requests per month limitation that I did not see. So I had to create a fake API with specs data taken from the same API and host the motorcycle images locally. The fake API web site I used is [Fake JSON API](https://mocki.io/fake-json-api). Attached is also a copy of the file [specs JSON](documentation/specs.json)
-    All the filtering take place on the client side in the [specs.js](assets/js/specs.js) file unlike a real API.
+    All the filtering take place on the client side in the [specs.js](../assets/js/specs.js) file unlike a real API.
 
     <details close>
       <summary>Specs Preview</summary>
@@ -269,7 +271,7 @@ The user can also access these utilities directly from the navigation bar.
   A start playing button with hover animation is visible at first, once clicked the first question and four answers are available to choose from. Once the user make a choice if the answer is correct it will be highlighted in green and a message appears for 3 seconds. if the answer is wrong the correct answer will be highlighted in green and the user's answer in red, and a message will appear for 3 seconds. Then comes the next question till the 10 tries are finished.
   on top there is a header contains the question number and the current score.
   The questions are randomly loaded from a fake API that I created using [Fake JSON API](https://mocki.io/fake-json-api). Attached is also a copy of the file [quiz JSON](documentation/quiz.json).
-  The checking process is implemented in [quiz js](assets/js/quiz.js) by comparing the data-set value the every answer has and the actual selected answer value.
+  The checking process is implemented in JS by comparing the data-set value the every answer has and the actual selected answer value.
 
     <details close>
     <summary>Quiz Header</summary>
@@ -311,7 +313,7 @@ The user can also access these utilities directly from the navigation bar.
   [Blend Colors](https://www.youtube.com/watch?v=HwDyNRkJZLQ&ab_channel=KevinPowell),
   [SVG Colors](https://www.youtube.com/shorts/qA_-O35O_X4).
 
-  The mechanism of layers visibility and color is implemented in [paint.js](assets/js/paint.js) file.
+  The mechanism of layers visibility and color is implemented in [paint.js](../assets/js/paint.js) file.
 
     <details close>
     <summary>Paint process</summary>
@@ -321,7 +323,7 @@ The user can also access these utilities directly from the navigation bar.
     </details>
 
 - The Links page has a simple interface with buttons and descriptions. each button has hover animation and an appearing description.
-  the mechanism is implemented in [links.js](assets/js/links.js) file through reading the aria-label of the selected button.
+  the mechanism is implemented in [links.js](../assets/js/links.js) file through reading the aria-label of the selected button.
 
     <details close>
     <summary>Hover Effect</summary>
