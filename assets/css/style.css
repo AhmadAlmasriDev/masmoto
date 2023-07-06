@@ -29,6 +29,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
+    padding-bottom: 150px;
     height: 100%;
 }
 
@@ -408,6 +409,7 @@ a {
 
 /* ---------------------------Specs------------------------------------------ */
 #specs-sec {
+    padding-bottom: 16px;
     color: #191919;
     position: relative;
     top: 200px;
@@ -515,6 +517,7 @@ a {
 
 /* ---------------------------Quiz------------------------------------------- */
 #quiz-sec {
+    padding-bottom: 16px;
     color: #ffffff;
     position: relative;
     top: 200px;
@@ -694,6 +697,7 @@ a {
 
 /* ---------------------------Paint Shop------------------------------------- */
 #paint-sec {
+    padding-bottom: 16px;
     color: #ffffff;
     position: relative;
     top: 200px;
@@ -704,7 +708,7 @@ a {
 
 .paint-main-container {
     width: 100%;
-    padding-top: 32px;
+
 }
 
 .paint-container {
@@ -712,7 +716,7 @@ a {
     max-width: 1400px;
     min-height: 65vh;
     padding: 0;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .paint-container>div {
@@ -1415,13 +1419,13 @@ footer {
 
     /* Header----------------------- */
     .nav-main-container {
-        width: 50%;
+        width: 60%;
         flex-direction: column;
         align-items: center;
     }
 
     #logo {
-        width: 100%;
+        width: 90%;
     }
 
     .left-nav-container,
@@ -1455,8 +1459,8 @@ footer {
     }
 
     .nav-menu li {
-        padding: 1px 12px;
-        min-width: 160px;
+        padding: 1px;
+        min-width: 130px;
     }
 
     .nav-menu a {
@@ -1467,12 +1471,16 @@ footer {
     /* Footer----------------------- */
     .footer-container ul {
         flex-wrap: wrap;
-        column-gap: 64px;
+        column-gap: 32px;
         justify-content: center;
     }
 
     .footer-link {
         width: 35%;
+    }
+
+    .footer-logo {
+        padding: 0;
     }
 
     /* ---------------------------Home Page---------------------------------- */
@@ -1496,7 +1504,11 @@ footer {
 
     /* ---------------------------Specs Page--------------------------------- */
     .specs-header select {
-        width: 90%;
+        width: 100%;
+    }
+
+    #specs-sec>div {
+        padding: 0 16px;
     }
 
     .spec-name,
@@ -1542,5 +1554,13 @@ footer {
     /* ---------------------------Paint Page--------------------------------- */
     #controls {
         flex-direction: column;
+    }
+
+    .paint-main-container {
+        padding: 0 16px;
+    }
+
+    .paint-controls-conatainer {
+        min-width: 250px;
     }
 }
