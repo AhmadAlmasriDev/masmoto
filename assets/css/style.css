@@ -1511,22 +1511,30 @@ footer {
         font-size: 900%;
     }
 
+    .specs-container {
+        min-width: 240px;
+    }
+
     #specs-sec>div {
         padding: 0 16px;
     }
 
     .spec-name,
     .spec-value {
-        min-width: 100px;
+        min-width: 90px;
     }
 
     .info-container>h2 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .info-container {
+        padding: 16px;
     }
 
     .spec-name,
     .spec-value {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     /* ---------------------------Quiz Page---------------------------------- */
