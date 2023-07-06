@@ -264,7 +264,9 @@ a {
     color: #191919;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.left-nav-active,
+.right-nav-active {
     border-radius: 5px;
     box-shadow: inset 2px 2px 6px #19191999;
 }
@@ -276,6 +278,18 @@ a {
 }
 
 #left-nav-menu a:hover {
+    background-color: #ed1d24;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #1919194d;
+}
+
+#right-nav-menu .right-nav-active {
+    background-color: #ffffff;
+    color: #191919;
+    text-shadow: none;
+}
+
+#left-nav-menu .left-nav-active {
     background-color: #ed1d24;
     color: #ffffff;
     text-shadow: 1px 1px 10px #1919194d;
@@ -1098,6 +1112,12 @@ footer {
     .header-container>div {
         flex-direction: column;
         padding: 16px;
+    }
+
+    #right-nav-menu .right-nav-active {
+        background-color: #ed1d24;
+        color: #F5F5F5;
+        text-shadow: 1px 1px 10px #1919194d;
     }
 
     #logo {
